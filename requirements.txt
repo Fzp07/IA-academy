@@ -8,5 +8,5 @@ matplotlib==3.8.2
 plotly==5.18.0
 deap==1.4.1
 Pillow==10.1.0
-serverless-wsgi==2.2.0
+serverless-wsgi>=3.0.0
 requests==2.31.0
