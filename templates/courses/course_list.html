@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load course_tags %}
+
+{% block title %}Cursos - AI Academy{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex align-items-center gap-3 mb-4">
+        <h1 class="mb-0">
+            <i class="fas fa-robot ai-brain-glow"></i> Cursos Disponibles
+        </h1>
+        <div class="ai-frequency">
+            <span style="height:20%;"></span>
+            <span style="height:50%;"></span>
+            <span style="height:30%;"></span>
+            <span style="height:70%;"></span>
+            <span style="height:40%;"></span>
+            <span style="height:60%;"></span>
+            <span style="height:25%;"></span>
+            <span style="height:55%;"></span>
+        </div>
+    </div>
+    <div class="row">
+        {% for course in courses %}
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 ai-scan">
+                {% if course.image %}
+                <img src="{{ course.image.url }}" class="card-img-top" alt="{{ course.title }}">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ course.title }}</h5>
+                    <p class="card-text">{{ course.description|truncatewords:30 }}</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted"><i class="fas fa-book-open"></i> {{ course.total_lessons }} lecciones · <i class="fas fa-calendar-alt"></i> {{ course.duration_months }} meses</small>
+                        {% if user_completed|get_item:course.id %}
+                        <span class="badge bg-success"><i class="fas fa-check-circle"></i> Completado</span>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <a href="{% url 'courses:course_detail' course.slug %}" class="btn btn-primary w-100">
+                        <i class="fas fa-play-circle"></i> Ver Curso
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center py-5">
+            <i class="fas fa-book-open fa-4x text-muted mb-3"></i>
+            <p class="lead">No hay cursos disponibles todavía.</p>
+            <div class="ai-thinking-dots justify-content-center mt-3">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p class="text-muted small mt-2">Esperando nuevos cursos...</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

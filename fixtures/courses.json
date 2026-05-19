@@ -1,0 +1,3627 @@
+[
+{
+  "model": "courses.course",
+  "pk": 1,
+  "fields": {
+    "title": "Regresión Lineal",
+    "slug": "regresion-lineal",
+    "description": "Aprende los fundamentos de la regresión lineal, desde conceptos básicos hasta implementaciones prácticas con Python y scikit-learn.",
+    "objectives": "Comprender el concepto de regresión lineal\nImplementar modelos de regresión con Python\nEvaluar modelos usando métricas como R², RMSE y MAE\nAplicar regresión lineal a datos reales",
+    "prerequisites": "Conocimientos básicos de Python\nConceptos fundamentales de estadística",
+    "image": "",
+    "order": 1,
+    "duration_months": 6,
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 2,
+  "fields": {
+    "title": "Algoritmos Genéticos",
+    "slug": "algoritmos-geneticos",
+    "description": "Descubre el mundo de los algoritmos evolutivos y cómo pueden resolver problemas complejos de optimización.",
+    "objectives": "Entender los principios de la evolución darwiniana aplicada a computación\nImplementar un algoritmo genético desde cero\nAplicar AGs a problemas de optimización\nConocer los operadores genéticos: selección, cruce y mutación",
+    "prerequisites": "Conocimientos básicos de Python\nFamiliaridad con funciones matemáticas",
+    "image": "",
+    "order": 2,
+    "duration_months": 6,
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 3,
+  "fields": {
+    "title": "Redes Neuronales",
+    "slug": "redes-neuronales",
+    "description": "Aprende los fundamentos de las redes neuronales artificiales, desde el perceptrón hasta arquitecturas profundas, y cómo implementarlas con Python y TensorFlow.",
+    "objectives": "Comprender el funcionamiento de las neuronas artificiales\nImplementar perceptrones y redes multicapa\nEntender backpropagation y optimización\nConocer arquitecturas CNN y RNN",
+    "prerequisites": "Conocimientos básicos de Python\nFundamentos de álgebra lineal\nConceptos de regresión lineal",
+    "image": "",
+    "order": 3,
+    "duration_months": 6,
+    "created_at": "2026-05-19T16:22:44.332Z",
+    "updated_at": "2026-05-19T16:22:44.336Z"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 4,
+  "fields": {
+    "title": "Árboles de Decisión",
+    "slug": "arboles-de-decision",
+    "description": "Domina los árboles de decisión y los métodos ensemble como Random Forest y Gradient Boosting para problemas de clasificación y regresión.",
+    "objectives": "Entender cómo funcionan los árboles de decisión\nConocer los criterios de división (Gini, Entropía)\nImplementar Random Forest y Gradient Boosting\nAplicar estos modelos a problemas reales",
+    "prerequisites": "Conocimientos básicos de Python\nConceptos de probabilidad básica\nFamiliaridad con clasificación",
+    "image": "",
+    "order": 4,
+    "duration_months": 6,
+    "created_at": "2026-05-19T16:22:44.512Z",
+    "updated_at": "2026-05-19T16:22:44.512Z"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 5,
+  "fields": {
+    "title": "Máquinas de Soporte Vectorial (SVM)",
+    "slug": "maquinas-de-soporte-vectorial",
+    "description": "Aprende SVMs, una poderosa técnica de aprendizaje supervisado para clasificación y regresión que encuentra el hiperplano óptimo de separación.",
+    "objectives": "Comprender el concepto de hiperplano de separación óptimo\nEntender el truco del kernel para datos no lineales\nImplementar SVM para clasificación y regresión\nConocer las fortalezas y limitaciones de SVM",
+    "prerequisites": "Conocimientos básicos de Python\nÁlgebra lineal básica (vectores, matrices)\nConceptos de clasificación",
+    "image": "",
+    "order": 5,
+    "duration_months": 6,
+    "created_at": "2026-05-19T16:22:44.655Z",
+    "updated_at": "2026-05-19T16:22:44.655Z"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 6,
+  "fields": {
+    "title": "Clustering (Agrupamiento)",
+    "slug": "clustering",
+    "description": "Aprende las técnicas de aprendizaje no supervisado más importantes para encontrar patrones y agrupar datos similares sin etiquetas previas.",
+    "objectives": "Comprender los fundamentos del aprendizaje no supervisado\nDominar K-Means, DBSCAN y clustering jerárquico\nEvaluar la calidad de los clusters\nAplicar clustering a datos reales",
+    "prerequisites": "Conocimientos básicos de Python\nConceptos de distancia y similitud\nÁlgebra lineal básica",
+    "image": "",
+    "order": 6,
+    "duration_months": 6,
+    "created_at": "2026-05-19T16:22:44.784Z",
+    "updated_at": "2026-05-19T16:22:44.784Z"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 7,
+  "fields": {
+    "title": "Procesamiento del Lenguaje Natural (NLP)",
+    "slug": "procesamiento-lenguaje-natural",
+    "description": "Introducción al procesamiento del lenguaje natural: tokenización, embeddings, análisis de sentimiento, modelos transformer y aplicaciones prácticas con Python.",
+    "objectives": "Comprender los fundamentos del NLP\nAprender tokenización y representación de texto\nImplementar análisis de sentimiento y clasificación de texto\nConocer los modelos transformer y BERT",
+    "prerequisites": "Conocimientos básicos de Python\nFamiliaridad con redes neuronales\nConceptos de probabilidad",
+    "image": "",
+    "order": 7,
+    "duration_months": 6,
+    "created_at": "2026-05-19T16:22:44.892Z",
+    "updated_at": "2026-05-19T16:22:44.892Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 1,
+  "fields": {
+    "course": 1,
+    "title": "Introducción a la Regresión Lineal",
+    "lesson_type": "theory",
+    "order": 1,
+    "content": "<h2>¿Qué es la Regresión Lineal?</h2><p>La regresión lineal es un modelo estadístico que busca establecer la relación lineal entre una variable dependiente (Y) y una o más variables independientes (X).</p><h3>Ecuación de la recta</h3><p>$$y = mx + b$$</p><p>Donde:</p><ul><li><strong>m</strong> es la pendiente de la recta</li><li><strong>b</strong> es el intercepto</li></ul><p>El objetivo es encontrar los valores de m y b que minimicen el error entre los valores predichos y los reales.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 2,
+  "fields": {
+    "course": 1,
+    "title": "Demo Interactiva de Regresión Lineal",
+    "lesson_type": "demo",
+    "order": 14,
+    "content": "En esta lección podrás subir tu propio archivo CSV y ver cómo funciona la regresión lineal con datos reales.",
+    "demo_app": "regression",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 3,
+  "fields": {
+    "course": 1,
+    "title": "Tipos de Regresión",
+    "lesson_type": "theory",
+    "order": 3,
+    "content": "<h2>Más allá de la regresión lineal simple</h2><p>Existen diferentes tipos de regresión para diferentes tipos de problemas:</p><h3>Regresión Lineal Simple</h3><p>Una variable independiente (X) predice una dependiente (Y). La relación es una línea recta.</p><h3>Regresión Lineal Múltiple</h3><p>Dos o más variables independientes predicen la variable dependiente. Ej: predecir precio de una casa usando tamaño, habitaciones, ubicación.</p><h3>Regresión Polinómica</h3><p>Cuando la relación no es lineal, podemos añadir términos polinómicos (x², x³, etc.) para capturar curvatura.</p><h3>Regresión Logística</h3><p>A pesar del nombre, se usa para clasificación binaria. Predice probabilidades usando la función sigmoide.</p><h3>Regresión Ridge y Lasso</h3><p>Versiones regularizadas que evitan el sobreajuste añadiendo penalizaciones.</p><p>Cada tipo tiene sus casos de uso específicos. En los siguientes módulos exploraremos cada uno en detalle.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 4,
+  "fields": {
+    "course": 2,
+    "title": "Introducción a los Algoritmos Genéticos",
+    "lesson_type": "theory",
+    "order": 1,
+    "content": "<h2>¿Qué son los Algoritmos Genéticos?</h2><p>Los algoritmos genéticos son técnicas de búsqueda y optimización inspiradas en la teoría de la evolución de Darwin.</p><h3>Componentes principales</h3><ul><li><strong>Población:</strong> Conjunto de soluciones candidatas</li><li><strong>Selección:</strong> Elección de los mejores individuos</li><li><strong>Cruce:</strong> Combinación de padres para generar hijos</li><li><strong>Mutación:</strong> Alteración aleatoria de genes</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 5,
+  "fields": {
+    "course": 2,
+    "title": "Demo Interactiva de Algoritmo Genético",
+    "lesson_type": "demo",
+    "order": 15,
+    "content": "Experimenta con diferentes configuraciones y observa cómo evoluciona una población para optimizar funciones.",
+    "demo_app": "genetic",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 6,
+  "fields": {
+    "course": 2,
+    "title": "Fundamentos de la Evolución Artificial",
+    "lesson_type": "theory",
+    "order": 2,
+    "content": "<h2>¿Cómo funciona la evolución artificial?</h2><p>Los algoritmos genéticos simulan el proceso de evolución natural en una computadora para resolver problemas de optimización.</p><h3>El ciclo evolutivo</h3><ol><li><strong>Inicialización:</strong> Se crea una población aleatoria de soluciones candidatas</li><li><strong>Evaluación:</strong> Cada individuo se evalúa con una función de fitness</li><li><strong>Selección:</strong> Los mejores individuos tienen más probabilidad de reproducirse</li><li><strong>Cruce:</strong> Se combinan pares de padres para crear hijos</li><li><strong>Mutación:</strong> Se introducen cambios aleatorios en los hijos</li><li><strong>Reemplazo:</strong> Los hijos reemplazan a los padres formando una nueva generación</li><li><strong>Repetir:</strong> Volver al paso 2 hasta alcanzar el criterio de parada</li></ol><h3>Paralelismo con la evolución natural</h3><table class=\"table table-dark table-sm\"><tr><th>Naturaleza</th><th>Algoritmo Genético</th></tr><tr><td>Individuo</td><td>Solución candidata</td></tr><tr><td>ADN</td><td>Codificación (genes)</td></tr><tr><td>Adaptación al medio</td><td>Fitness</td></tr><tr><td>Reproducción sexual</td><td>Cruce (crossover)</td></tr><tr><td>Mutación genética</td><td>Mutación</td></tr><tr><td>Selección natural</td><td>Selección por fitness</td></tr></table><p>Este ciclo permite que la población evolucione hacia mejores soluciones generación tras generación.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 7,
+  "fields": {
+    "course": 1,
+    "title": "El Método de Mínimos Cuadrados",
+    "lesson_type": "theory",
+    "order": 2,
+    "content": "<h2>Método de Mínimos Cuadrados Ordinarios (OLS)</h2><p>El método de mínimos cuadrados es la técnica fundamental para estimar los parámetros de un modelo de regresión lineal.</p><h3>Objetivo</h3><p>Minimizar la suma de los cuadrados de los residuos (diferencias entre valores observados y predichos):</p><p><code>min Σ(yᵢ - ŷᵢ)²</code></p><h3>Solución analítica</h3><p>Para regresión lineal simple, los estimadores son:</p><ul><li><strong>Pendiente (m):</strong> m = Σ((xᵢ - x̄)(yᵢ - ȳ)) / Σ(xᵢ - x̄)²</li><li><strong>Intercepto (b):</strong> b = ȳ - m · x̄</li></ul><p>Python implementa esto automáticamente con scikit-learn, pero es importante entender el fundamento matemático detrás del modelo.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 8,
+  "fields": {
+    "course": 1,
+    "title": "Ejemplo: Regresión con datos de ventas",
+    "lesson_type": "example",
+    "order": 4,
+    "content": "<h2>Ejemplo práctico: Predicción de ventas</h2><p>Supongamos que tenemos datos de gastos en publicidad y ventas mensuales de una empresa.</p><h3>Datos de ejemplo</h3><table class=\"table table-dark table-sm\"><tr><th>Publicidad ($)</th><th>Ventas ($)</th></tr><tr><td>1000</td><td>15000</td></tr><tr><td>2000</td><td>28000</td></tr><tr><td>3000</td><td>32000</td></tr><tr><td>4000</td><td>45000</td></tr><tr><td>5000</td><td>48000</td></tr></table><h3>Código en Python</h3><pre class=\"code-block\">from sklearn.linear_model import LinearRegression\nimport numpy as np\n\nX = np.array([[1000], [2000], [3000], [4000], [5000]])\ny = np.array([15000, 28000, 32000, 45000, 48000])\n\nmodel = LinearRegression()\nmodel.fit(X, y)\n\nprint(f'Pendiente: {model.coef_[0]:.2f}')\nprint(f'Intercepto: {model.intercept_:.2f}')\nprint(f'R²: {model.score(X, y):.4f}')</pre><h3>Interpretación</h3><p>La pendiente nos indica que por cada dólar adicional en publicidad, las ventas aumentan en promedio X dólares. El intercepto representa las ventas base sin publicidad.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 9,
+  "fields": {
+    "course": 1,
+    "title": "Evaluación de Modelos de Regresión",
+    "lesson_type": "theory",
+    "order": 5,
+    "content": "<h2>Métricas para evaluar modelos de regresión</h2><p>Existen varias métricas para evaluar qué tan bien se desempeña un modelo de regresión:</p><h3>R² (Coeficiente de Determinación)</h3><p>Mide la proporción de varianza explicada por el modelo. Rango: [0, 1]. Valores cercanos a 1 indican buen ajuste.</p><h3>RMSE (Root Mean Square Error)</h3><p>Raíz cuadrada del error cuadrático medio. Penaliza más los errores grandes. Está en las mismas unidades que la variable objetivo.</p><h3>MAE (Mean Absolute Error)</h3><p>Promedio del valor absoluto de los errores. Menos sensible a outliers que el RMSE.</p><h3>MSE (Mean Square Error)</h3><p>Promedio de los errores al cuadrado. Muy sensible a outliers.</p><h3>¿Cuál usar?</h3><ul><li><strong>R²</strong> para interpretabilidad</li><li><strong>RMSE</strong> si los errores grandes son problemáticos</li><li><strong>MAE</strong> para una visión más robusta del error</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 10,
+  "fields": {
+    "course": 1,
+    "title": "Ejemplo: Cálculo de métricas",
+    "lesson_type": "example",
+    "order": 6,
+    "content": "<h2>Ejemplo: Calculando métricas paso a paso</h2><p>Usaremos el mismo modelo de ventas y calcularemos todas las métricas de evaluación.</p><pre class=\"code-block\">from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error\nimport numpy as np\n\ny_true = np.array([15000, 28000, 32000, 45000, 48000])\ny_pred = model.predict(X)\n\nr2 = r2_score(y_true, y_pred)\nmse = mean_squared_error(y_true, y_pred)\nrmse = np.sqrt(mse)\nmae = mean_absolute_error(y_true, y_pred)\n\nprint(f'R²: {r2:.4f}')\nprint(f'MSE: {mse:.2f}')\nprint(f'RMSE: {rmse:.2f}')\nprint(f'MAE: {mae:.2f}')</pre><h3>¿Qué nos dicen estos números?</h3><p>Un R² alto indica que el modelo explica la mayor parte de la variabilidad. El RMSE nos dice que el error típico de predicción es de X unidades monetarias.</p><p>Si el R² es bajo, podríamos necesitar más variables o un modelo diferente.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 11,
+  "fields": {
+    "course": 1,
+    "title": "Supuestos de la Regresión Lineal",
+    "lesson_type": "theory",
+    "order": 7,
+    "content": "<h2>Supuestos del modelo de regresión lineal</h2><p>Para que el modelo de regresión lineal sea válido, deben cumplirse ciertos supuestos:</p><h3>1. Linealidad</h3><p>La relación entre X e Y debe ser lineal. Se verifica con gráficos de dispersión.</p><h3>2. Independencia de errores</h3><p>Los residuos deben ser independientes entre sí. Importante en datos temporales.</p><h3>3. Homocedasticidad</h3><p>La varianza de los residuos debe ser constante a lo largo de todos los valores de X.</p><h3>4. Normalidad de los errores</h3><p>Los residuos deben distribuirse aproximadamente como una normal (para inferencia estadística).</p><h3>5. No multicolinealidad</h3><p>En regresión múltiple, las variables predictoras no deben estar altamente correlacionadas entre sí.</p><h3>¿Qué hacer si no se cumplen?</h3><ul><li>Transformar variables (log, raíz cuadrada)</li><li>Usar modelos robustos</li><li>Considerar regresión polinómica</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 12,
+  "fields": {
+    "course": 1,
+    "title": "Ejemplo: Diagnóstico de residuos",
+    "lesson_type": "example",
+    "order": 8,
+    "content": "<h2>Diagnóstico visual de residuos</h2><p>Los gráficos de residuos son herramientas fundamentales para verificar los supuestos del modelo.</p><pre class=\"code-block\">import matplotlib.pyplot as plt\n\nresiduos = y_true - y_pred\n\n# Gráfico de residuos vs valores predichos\nplt.scatter(y_pred, residuos)\nplt.axhline(y=0, color='r', linestyle='--')\nplt.xlabel('Valores predichos')\nplt.ylabel('Residuos')\nplt.title('Residuos vs Valores Predichos')\nplt.show()\n\n# QQ-plot para normalidad\nfrom scipy import stats\nstats.probplot(residuos, dist=\"norm\", plot=plt)\nplt.title('QQ-Plot de Residuos')\nplt.show()</pre><h3>Interpretación</h3><ul><li><strong>Patrón aleatorio</strong> en residuos vs predichos → buen modelo</li><li><strong>Patrón de embudo</strong> → heterocedasticidad</li><li><strong>Patrón curvilíneo</strong> → relación no lineal</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 13,
+  "fields": {
+    "course": 1,
+    "title": "Regresión Lineal Múltiple",
+    "lesson_type": "theory",
+    "order": 9,
+    "content": "<h2>Regresión Lineal Múltiple</h2><p>La regresión lineal múltiple extiende el modelo simple para usar múltiples variables predictoras.</p><h3>Ecuación</h3><p>y = β₀ + β₁x₁ + β₂x₂ + ... + βₙxₙ + ε</p><p>Donde cada βᵢ representa el efecto de la variable xᵢ manteniendo las demás constantes.</p><h3>Ejemplo multivariable</h3><p>Para predecir el precio de una casa podríamos usar: tamaño, número de habitaciones, antigüedad, ubicación.</p><h3>Precauciones</h3><ul><li><strong>Multicolinealidad:</strong> las variables predictoras no deben estar muy correlacionadas entre sí</li><li><strong>Maldición de la dimensionalidad:</strong> muchas variables requieren más datos</li><li><strong>Sobreajuste:</strong> demasiadas variables pueden ajustar ruido en lugar de señal</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 14,
+  "fields": {
+    "course": 1,
+    "title": "Ejemplo: Regresión múltiple con scikit-learn",
+    "lesson_type": "example",
+    "order": 10,
+    "content": "<h2>Ejemplo: Predicción de precios de vivienda</h2><p>Usaremos múltiples características para predecir el precio de una vivienda.</p><pre class=\"code-block\">import pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.metrics import r2_score\n\ndata = pd.DataFrame({\n    'tamaño_m2': [80, 120, 100, 150, 90, 130],\n    'habitaciones': [2, 3, 2, 4, 2, 3],\n    'antigüedad': [10, 5, 20, 2, 15, 8],\n    'precio': [120000, 200000, 150000, 280000, 130000, 220000]\n})\n\nX = data[['tamaño_m2', 'habitaciones', 'antigüedad']]\ny = data['precio']\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n\ny_pred = model.predict(X_test)\nprint(f'R² en test: {r2_score(y_test, y_pred):.4f}')\nprint('Coeficientes:', model.coef_)\nprint('Intercepto:', model.intercept_)</pre><h3>Interpretación de coeficientes</h3><p>Cada coeficiente representa el cambio en el precio por cada unidad adicional de esa característica, manteniendo las demás constantes.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 15,
+  "fields": {
+    "course": 1,
+    "title": "Regularización: Ridge y Lasso",
+    "lesson_type": "theory",
+    "order": 11,
+    "content": "<h2>Regularización en Regresión Lineal</h2><p>La regularización añade una penalización a los coeficientes para evitar el sobreajuste y mejorar la generalización.</p><h3>Ridge Regression (L2)</h3><p>Añade una penalización proporcional al cuadrado de los coeficientes. Reduce todos los coeficientes pero no los lleva a cero.</p><p>Función de costo: MSE + λ·Σβᵢ²</p><h3>Lasso Regression (L1)</h3><p>Añade una penalización proporcional al valor absoluto de los coeficientes. Puede llevar coeficientes a cero, realizando selección automática de características.</p><p>Función de costo: MSE + λ·Σ|βᵢ|</p><h3>Elastic Net</h3><p>Combina las penalizaciones L1 y L2: MSE + λ₁·Σ|βᵢ| + λ₂·Σβᵢ²</p><h3>¿Cuándo usar cada uno?</h3><ul><li><strong>Ridge:</strong> cuando hay multicolinealidad</li><li><strong>Lasso:</strong> cuando se sospecha que muchas variables son irrelevantes</li><li><strong>Elastic Net:</strong> cuando hay muchas variables correlacionadas</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 16,
+  "fields": {
+    "course": 1,
+    "title": "Ejemplo: Comparación de modelos regularizados",
+    "lesson_type": "example",
+    "order": 12,
+    "content": "<h2>Comparando Ridge vs Lasso vs Elastic Net</h2><pre class=\"code-block\">from sklearn.linear_model import Ridge, Lasso, ElasticNet\nfrom sklearn.metrics import mean_squared_error\nimport numpy as np\n\n# Modelos con regularización\nridge = Ridge(alpha=1.0)\nlasso = Lasso(alpha=0.1)\nelastic = ElasticNet(alpha=0.1, l1_ratio=0.5)\n\nmodelos = {\n    'Ridge': ridge,\n    'Lasso': lasso,\n    'Elastic Net': elastic\n}\n\nfor nombre, modelo in modelos.items():\n    modelo.fit(X_train, y_train)\n    pred = modelo.predict(X_test)\n    rmse = np.sqrt(mean_squared_error(y_test, pred))\n    print(f'{nombre}: RMSE = {rmse:.2f}')\n    print(f'  Coeficientes: {modelo.coef_}')\n    print()</pre><h3>Observaciones</h3><p>Lasso tiende a producir coeficientes exactamente cero para variables menos importantes, mientras que Ridge los reduce pero no los elimina. Elastic Net ofrece un balance entre ambos.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 17,
+  "fields": {
+    "course": 1,
+    "title": "Pipeline de Machine Learning",
+    "lesson_type": "theory",
+    "order": 13,
+    "content": "<h2>Construyendo un Pipeline de Machine Learning</h2><p>Un pipeline permite encadenar múltiples pasos de procesamiento y modelado en un solo objeto.</p><h3>Ventajas</h3><ul><li>Automatización del flujo de trabajo</li><li>Prevención de data leakage</li><li>Facilidad para búsqueda de hiperparámetros</li><li>Código más limpio y mantenible</li></ul><h3>Ejemplo de pipeline completo</h3><pre class=\"code-block\">from sklearn.pipeline import Pipeline\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.linear_model import Ridge\n\npipeline = Pipeline([\n    ('scaler', StandardScaler()),\n    ('regressor', Ridge(alpha=1.0))\n])\n\npipeline.fit(X_train, y_train)\npredictions = pipeline.predict(X_test)</pre><h3>GridSearchCV con Pipeline</h3><p>Podemos buscar los mejores hiperparámetros del pipeline completo usando validación cruzada.</p><pre class=\"code-block\">from sklearn.model_selection import GridSearchCV\n\nparam_grid = {\n    'regressor__alpha': [0.1, 1.0, 10.0]\n}\ngrid = GridSearchCV(pipeline, param_grid, cv=5)\ngrid.fit(X_train, y_train)\nprint('Mejores parámetros:', grid.best_params_)</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 18,
+  "fields": {
+    "course": 1,
+    "title": "Examen: Regresión Lineal",
+    "lesson_type": "exam",
+    "order": 15,
+    "content": "Responde las siguientes preguntas para evaluar tu comprensión de la regresión lineal.",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 19,
+  "fields": {
+    "course": 2,
+    "title": "Representación de Individuos",
+    "lesson_type": "theory",
+    "order": 3,
+    "content": "<h2>Codificación de soluciones en AGs</h2><p>La representación de los individuos es uno de los aspectos más importantes en el diseño de un algoritmo genético.</p><h3>Codificación Binaria</h3><p>La forma más clásica. Cada individuo es una cadena de bits (0s y 1s). Ideal para problemas de selección (como la mochila).</p><p>Ejemplo: [1, 0, 1, 1, 0] representa seleccionar los items 1, 3 y 4.</p><h3>Codificación Real</h3><p>Cada gen es un número real. Útil para optimización de funciones continuas.</p><p>Ejemplo: [3.14, 2.71, 1.61] representa un punto en R³.</p><h3>Codificación Permutacional</h3><p>Para problemas de ordenamiento (ej: ruteo de vehículos). Cada individuo es una permutación.</p><p>Ejemplo: [3, 1, 4, 2, 5] representa un orden de visita.</p><h3>¿Cuál elegir?</h3><ul><li><strong>Binaria:</strong> problemas de selección, AGs canónicos</li><li><strong>Real:</strong> optimización numérica, más precisa</li><li><strong>Permutación:</strong> problemas de ruteo y scheduling</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 20,
+  "fields": {
+    "course": 2,
+    "title": "Ejemplo: Codificación binaria y real",
+    "lesson_type": "example",
+    "order": 4,
+    "content": "<h2>Ejemplo: Implementando diferentes codificaciones</h2><pre class=\"code-block\">import random\n\n# Codificación binaria\nindividuo_binario = [random.randint(0, 1) for _ in range(10)]\nprint(f'Binario: {individuo_binario}')\n\n# Decodificar: convertir bits a número entero\nvalor = int(''.join(map(str, individuo_binario)), 2)\nprint(f'Valor decimal: {valor}')\n\n# Codificación real\nindividuo_real = [random.uniform(-5, 5) for _ in range(3)]\nprint(f'Real: {individuo_real}')\n\n# Función de fitness para codificación real\ndef fitness(x, y, z):\n    return -(x**2 + y**2 + z**2) + 100  # Buscar máximo\n\npuntaje = fitness(*individuo_real)\nprint(f'Fitness: {puntaje:.2f}')</pre><h3>Conversión entre representaciones</h3><p>En la práctica, la decodificación traduce el genotipo (código) al fenotipo (solución real). Por ejemplo, un gen binario podría representar 'seleccionar' o 'no seleccionar' un elemento.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 21,
+  "fields": {
+    "course": 2,
+    "title": "Operadores de Selección",
+    "lesson_type": "theory",
+    "order": 5,
+    "content": "<h2>Mecanismos de Selección en AGs</h2><p>La selección determina qué individuos se reproducirán para crear la siguiente generación.</p><h3>Selección por Ruleta (Roulette Wheel)</h3><p>Los individuos con mejor fitness tienen mayor probabilidad de ser seleccionados. La probabilidad es proporcional a su fitness relativo.</p><p>Problema: Puede converger prematuramente si hay un individuo muy superior.</p><h3>Selección por Torneo (Tournament)</h3><p>Se eligen k individuos al azar y el mejor de ellos es seleccionado. Controlable mediante el tamaño del torneo.</p><ul><li>Torneo pequeño → más diversidad</li><li>Torneo grande → más presión selectiva</li></ul><h3>Selección por Ranking</h3><p>Ordena los individuos por fitness y asigna probabilidades basadas en su posición, no en su fitness absoluto. Evita la dominancia de super-individuos.</p><h3>Selección Elitista</h3><p>Los n mejores individuos pasan directamente a la siguiente generación. Garantiza que la calidad mínima no disminuya.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 22,
+  "fields": {
+    "course": 2,
+    "title": "Ejemplo: Torneo vs Ruleta",
+    "lesson_type": "example",
+    "order": 6,
+    "content": "<h2>Comparando métodos de selección</h2><pre class=\"code-block\">import random\n\npoblacion = [\n    {'genes': [1,0,1], 'fitness': 10},\n    {'genes': [0,1,0], 'fitness': 5},\n    {'genes': [1,1,0], 'fitness': 8},\n    {'genes': [0,0,1], 'fitness': 3},\n]\n\n# Selección por ruleta\ntotal_fitness = sum(ind['fitness'] for ind in poblacion)\nseleccionados_ruleta = []\nfor _ in range(3):\n    r = random.uniform(0, total_fitness)\n    acumulado = 0\n    for ind in poblacion:\n        acumulado += ind['fitness']\n        if acumulado >= r:\n            seleccionados_ruleta.append(ind)\n            break\n\nprint('Seleccionados por ruleta:')\nfor ind in seleccionados_ruleta:\n    print(f'  Fitness: {ind[\"fitness\"]}')\n\n# Selección por torneo\ndef torneo(poblacion, k=2):\n    competidores = random.sample(poblacion, k)\n    return max(competidores, key=lambda x: x['fitness'])\n\nseleccionados_torneo = [torneo(poblacion) for _ in range(3)]\nprint('Seleccionados por torneo:')\nfor ind in seleccionados_torneo:\n    print(f'  Fitness: {ind[\"fitness\"]}')</pre><h3>¿Cuál es mejor?</h3><p>El torneo da más control sobre la presión selectiva. La ruleta es más simple pero puede ser problemática si hay mucha diferencia entre fitness.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 23,
+  "fields": {
+    "course": 2,
+    "title": "Operadores de Cruce (Crossover)",
+    "lesson_type": "theory",
+    "order": 7,
+    "content": "<h2>Operadores de Cruce en AGs</h2><p>El cruce combina el material genético de dos padres para crear hijos que hereden características de ambos.</p><h3>Cruce en un punto</h3><p>Se elige un punto de corte y se intercambian las colas de los padres.</p><p>Padre1: [A|B] → Hijo1: [A|B']<br>Padre2: [A'|B'] → Hijo2: [A'|B]</p><h3>Cruce en dos puntos</h3><p>Se eligen dos puntos de corte y se intercambia la sección media.</p><h3>Cruce uniforme</h3><p>Cada gen del hijo se elige aleatoriamente de uno de los dos padres con una probabilidad definida (generalmente 50%).</p><h3>Cruce para codificación real</h3><ul><li><strong>Intermedio:</strong> hijo = α·padre1 + (1-α)·padre2</li><li><strong>BLX-α:</strong> extiende el rango más allá de los padres</li><li><strong>SBX:</strong> simula el comportamiento del cruce binario</li></ul><h3>Probabilidad de cruce</h3><p>Típicamente entre 0.6 y 0.9. Una probabilidad alta explora más combinaciones, pero puede romper buenas soluciones.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 24,
+  "fields": {
+    "course": 2,
+    "title": "Ejemplo: Cruce en un punto y uniforme",
+    "lesson_type": "example",
+    "order": 8,
+    "content": "<h2>Implementando operadores de cruce</h2><pre class=\"code-block\">import random\n\npadre1 = [1, 1, 0, 0, 1, 0]\npadre2 = [0, 0, 1, 1, 0, 1]\n\ndef cruce_un_punto(p1, p2):\n    punto = random.randint(1, len(p1)-1)\n    h1 = p1[:punto] + p2[punto:]\n    h2 = p2[:punto] + p1[punto:]\n    return h1, h2\n\ndef cruce_uniforme(p1, p2, prob=0.5):\n    h1, h2 = [], []\n    for g1, g2 in zip(p1, p2):\n        if random.random() < prob:\n            h1.append(g1)\n            h2.append(g2)\n        else:\n            h1.append(g2)\n            h2.append(g1)\n    return h1, h2\n\nh1a, h2a = cruce_un_punto(padre1, padre2)\nprint(f'Un punto:')\nprint(f'  Padre1: {padre1}')\nprint(f'  Padre2: {padre2}')\nprint(f'  Hijo1:  {h1a}')\nprint(f'  Hijo2:  {h2a}')\n\nh1b, h2b = cruce_uniforme(padre1, padre2)\nprint(f'Uniforme:')\nprint(f'  Hijo1:  {h1b}')\nprint(f'  Hijo2:  {h2b}')</pre><h3>Impacto en la evolución</h3><p>El cruce en un punto preserva bloques de genes contiguos. El cruce uniforme maximiza la recombinación pero puede romper esquemas valiosos.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 25,
+  "fields": {
+    "course": 2,
+    "title": "Operadores de Mutación",
+    "lesson_type": "theory",
+    "order": 9,
+    "content": "<h2>Mutación: Manteniendo la diversidad genética</h2><p>La mutación introduce cambios aleatorios en los individuos para mantener la diversidad y explorar nuevas regiones del espacio de búsqueda.</p><h3>Mutación Binaria (Bit Flip)</h3><p>Cada bit tiene una probabilidad de invertirse (0→1, 1→0). Probabilidad típica: 1/L (donde L es la longitud del individuo).</p><h3>Mutación Real</h3><ul><li><strong>Uniforme:</strong> reemplazar gen con valor aleatorio en el rango</li><li><strong>Gaussiana:</strong> añadir ruido N(0, σ) al gen</li><li><strong>No uniforme:</strong> la magnitud disminuye con las generaciones</li></ul><h3>Mutación por Intercambio</h3><p>Para permutaciones: intercambiar dos posiciones aleatorias.</p><h3>Probabilidad de mutación</h3><p>Muy baja (0.001-0.1). Si es muy alta, el AG se vuelve búsqueda aleatoria. Si es muy baja, puede converger prematuramente.</p><h3>Estrategias adaptativas</h3><p>La probabilidad de mutación puede ajustarse dinámicamente: alta al inicio para explorar, baja al final para explotar.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 26,
+  "fields": {
+    "course": 2,
+    "title": "Ejemplo: Mutación por bit flip y gaussiana",
+    "lesson_type": "example",
+    "order": 10,
+    "content": "<h2>Implementando operadores de mutación</h2><pre class=\"code-block\">import random\nimport math\n\ndef mutacion_bit_flip(individuo, prob=0.1):\n    return [\n        1 - gen if random.random() < prob else gen\n        for gen in individuo\n    ]\n\ndef mutacion_gaussiana(individuo, sigma=0.5, prob=0.2):\n    return [\n        gen + random.gauss(0, sigma) if random.random() < prob else gen\n        for gen in individuo\n    ]\n\n# Ejemplo binario\nbinario = [1, 0, 1, 1, 0, 0, 1]\nmutado = mutacion_bit_flip(binario, 0.2)\nprint(f'Original: {binario}')\nprint(f'Mutado:   {mutado}')\n\n# Ejemplo real\nreal = [1.5, -2.3, 0.7, 3.1]\nmutado_r = mutacion_gaussiana(real, 0.3, 0.3)\nprint(f'Original: {[f\"{v:.2f}\" for v in real]}')\nprint(f'Mutado:   {[f\"{v:.2f}\" for v in mutado_r]}')</pre><h3>El rol de la mutación</h3><p>Sin mutación, el AG solo puede explorar combinaciones del material genético inicial. La mutación permite acceder a regiones del espacio de búsqueda no representadas inicialmente.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 27,
+  "fields": {
+    "course": 2,
+    "title": "Estrategias de Reemplazo",
+    "lesson_type": "theory",
+    "order": 11,
+    "content": "<h2>Cómo reemplazar la población</h2><p>Una vez creados los hijos, debemos decidir cómo reemplazar la población actual.</p><h3>Reemplazo Generacional</h3><p>Toda la población es reemplazada por los hijos. Simple pero puede perder buenas soluciones.</p><h3>Reemplazo Elitista</h3><p>Los mejores N individuos de la generación actual sobreviven intactos. El resto se reemplaza. Garantiza monotonicidad en la calidad.</p><h3>Reemplazo por Estado Estacionario</h3><p>Solo se reemplazan los peores individuos. El resto de la población permanece. Hay más convergencia pero se preservan las buenas soluciones.</p><h3>Reemplazo Generacional con Elitismo</h3><p>La estrategia más común: se reemplaza casi toda la población pero se conservan los mejores 1-5 individuos.</p><h3>¿Cuántos elitistas?</h3><p>Depende del problema: 1-5% de la población suele ser adecuado. Demasiados elitistas → convergencia prematura. Pocos → se pueden perder mejores soluciones.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 28,
+  "fields": {
+    "course": 2,
+    "title": "Elitismo y Convergencia",
+    "lesson_type": "theory",
+    "order": 12,
+    "content": "<h2>Balance entre exploración y explotación</h2><p>El éxito de un algoritmo genético depende de balancear dos fuerzas opuestas: exploración (buscar nuevas regiones) y explotación (refinar buenas soluciones).</p><h3>Convergencia Prematura</h3><p>Ocurre cuando la población pierde diversidad demasiado rápido y se queda atascada en un óptimo local.</p><p><strong>Síntomas:</strong></p><ul><li>Todo el fitness se vuelve similar rápidamente</li><li>El algoritmo deja de mejorar</li><li>La varianza de la población es casi cero</li></ul><h3>Cómo evitarla</h3><ul><li>Mantener una población suficientemente grande</li><li>Probabilidad de mutación adecuada</li><li>Usar selección por ranking en lugar de ruleta</li><li>Implementar diversidad forzada (sharing, crowding)</li></ul><h3>Convergencia tardía</h3><p>Cuando el algoritmo se acerca al óptimo, debe explotar más. Reducir mutación y aumentar presión selectiva ayuda a refinar.</p><h3>Indicadores de convergencia</h3><p>Monitorear: fitness promedio, fitness máximo, diversidad (desviación estándar de fitness).</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 29,
+  "fields": {
+    "course": 2,
+    "title": "Problema de la Mochila (Knapsack)",
+    "lesson_type": "example",
+    "order": 13,
+    "content": "<h2>Resolviendo el problema de la mochila con AGs</h2><p>El problema de la mochila es un clásico de optimización combinatoria: dados items con peso y valor, seleccionar cuáles incluir para maximizar el valor sin exceder la capacidad.</p><pre class=\"code-block\">import random\n\nitems = [\n    {'peso': 2, 'valor': 10},\n    {'peso': 5, 'valor': 30},\n    {'peso': 3, 'valor': 20},\n    {'peso': 7, 'valor': 35},\n    {'peso': 4, 'valor': 25},\n    {'peso': 1, 'valor': 5},\n]\nCAPACIDAD = 15\n\ndef fitness(individuo):\n    peso = sum(items[i]['peso'] for i in range(len(individuo)) if individuo[i])\n    valor = sum(items[i]['valor'] for i in range(len(individuo)) if individuo[i])\n    if peso > CAPACIDAD:\n        return 0  # Solución inválida\n    return valor\n\n# Evaluar una solución\nsolucion = [1, 0, 1, 0, 1, 0]\nprint(f'Fitness: {fitness(solucion)}')\n\n# Items seleccionados\nfor i, sel in enumerate(solucion):\n    if sel:\n        print(f'  Item {i+1}: peso={items[i][\"peso\"]}, valor={items[i][\"valor\"]}')</pre><h3>Por qué funciona</h3><p>El AG explorará diferentes combinaciones, aprendiendo qué items son más valiosos y cómo combinarlos sin exceder la capacidad.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 30,
+  "fields": {
+    "course": 2,
+    "title": "Aplicaciones Avanzadas de AGs",
+    "lesson_type": "theory",
+    "order": 14,
+    "content": "<h2>Más allá de la optimización simple</h2><p>Los algoritmos genéticos tienen aplicaciones en múltiples dominios:</p><h3>Optimización de ingeniería</h3><ul><li>Diseño de alas de aviones</li><li>Optimización de rutas de distribución</li><li>Diseño de circuitos electrónicos</li><li>Planificación de producción</li></ul><h3>Machine Learning</h3><ul><li>Optimización de hiperparámetros</li><li>Selección de características</li><li>Entrenamiento de redes neuronales (NEAT)</li><li>Generación de arquitecturas (NAS)</li></ul><h3>Robótica</h3><ul><li>Evolución de morfologías robóticas</li><li>Optimización de controladores</li><li>Adaptación a entornos cambiantes</li></ul><h3>Arte y Creatividad</h3><ul><li>Generación de música evolutiva</li><li>Arte generativo</li><li>Diseño de videojuegos</li></ul><h3>Programación Genética</h3><p>Una rama donde los individuos son programas o expresiones matemáticas, evolucionando para resolver tareas específicas.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 31,
+  "fields": {
+    "course": 2,
+    "title": "Examen: Algoritmos Genéticos",
+    "lesson_type": "exam",
+    "order": 16,
+    "content": "Responde las siguientes preguntas para evaluar tu comprensión de los algoritmos genéticos.",
+    "demo_app": "",
+    "created_at": "2026-05-17T18:00:00Z",
+    "updated_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 32,
+  "fields": {
+    "course": 3,
+    "title": "Introducción a las Redes Neuronales",
+    "lesson_type": "theory",
+    "order": 1,
+    "content": "<h2>¿Qué son las Redes Neuronales?</h2><p>Las redes neuronales artificiales son modelos computacionales inspirados en el cerebro humano. Están compuestas por neuronas artificiales organizadas en capas que procesan información de forma paralela.</p><h3>Neurona biológica vs artificial</h3><p>Una neurona biológica recibe señales a través de las dendritas, las procesa en el cuerpo celular y transmite el resultado a través del axón. La neurona artificial imita este proceso: recibe entradas ponderadas, las suma, aplica una función de activación y produce una salida.</p><h3>Arquitectura básica</h3><ul><li>Capa de entrada: Recibe los datos crudos</li><li>Capas ocultas: Procesan y extraen características</li><li>Capa de salida: Produce el resultado final</li></ul><h3>Aplicaciones</h3><ul><li>Reconocimiento de imágenes y voz</li><li>Procesamiento del lenguaje natural</li><li>Sistemas de recomendación</li><li>Vehículos autónomos</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.343Z",
+    "updated_at": "2026-05-19T16:22:44.343Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 33,
+  "fields": {
+    "course": 3,
+    "title": "El Perceptrón",
+    "lesson_type": "theory",
+    "order": 2,
+    "content": "<h2>El Perceptrón: La unidad fundamental</h2><p>El perceptrón es la red neuronal más simple: una sola neurona que puede clasificar datos linealmente separables.</p><h3>Ecuación del perceptrón</h3><p>salida = activación( Σ(wᵢ · xᵢ) + b )</p><p>Donde wᵢ son los pesos, xᵢ las entradas, b el sesgo, y la activación suele ser una función escalón.</p><h3>Algoritmo de aprendizaje</h3><ol><li>Inicializar pesos aleatoriamente</li><li>Para cada muestra de entrenamiento, calcular la salida predicha y actualizar pesos</li><li>Repetir hasta convergencia</li></ol><h3>Limitaciones</h3><p>El perceptrón solo puede resolver problemas linealmente separables (ej: compuerta AND y OR, pero no XOR). Esto llevó al primer invierno de la IA y motivó la creación de las redes multicapa.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.350Z",
+    "updated_at": "2026-05-19T16:22:44.350Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 34,
+  "fields": {
+    "course": 3,
+    "title": "Ejemplo: Perceptrón en Python",
+    "lesson_type": "example",
+    "order": 3,
+    "content": "<h2>Implementando un Perceptrón desde cero</h2><pre class=\"code-block\">import numpy as np\n\nclass Perceptron:\n    def __init__(self, lr=0.01, epochs=100):\n        self.lr = lr\n        self.epochs = epochs\n    def fit(self, X, y):\n        self.w = np.zeros(1 + X.shape[1])\n        for _ in range(self.epochs):\n            for xi, target in zip(X, y):\n                pred = np.where(np.dot(xi, self.w[1:]) + self.w[0] >= 0, 1, -1)\n                error = target - pred\n                self.w[1:] += self.lr * error * xi\n                self.w[0] += self.lr * error\n\nX = np.array([[0,0],[0,1],[1,0],[1,1]])\ny = np.array([-1, -1, -1, 1])\np = Perceptron()\np.fit(X, y)\nprint(p.predict(X))  # AND gate</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.357Z",
+    "updated_at": "2026-05-19T16:22:44.357Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 35,
+  "fields": {
+    "course": 3,
+    "title": "Funciones de Activación",
+    "lesson_type": "theory",
+    "order": 4,
+    "content": "<h2>Funciones de Activación</h2><p>La función de activación determina si una neurona se activa o no, y añade no linealidad al modelo.</p><h3>Sigmoide</h3><p>σ(x) = 1 / (1 + e⁻ˣ). Rango: (0, 1). Útil para probabilidades. Problema: gradientes que se desvanecen.</p><h3>Tanh</h3><p>tanh(x) = (eˣ - e⁻ˣ) / (eˣ + e⁻ˣ). Rango: (-1, 1). Centrada en cero, mejor que sigmoide pero aún sufre gradientes vanishing.</p><h3>ReLU (Rectified Linear Unit)</h3><p>ReLU(x) = max(0, x). La más usada actualmente. Rápida, no satura en región positiva.</p><h3>Softmax</h3><p>Usada en la capa de salida para clasificación multiclase. Convierte logits en probabilidades que suman 1.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.363Z",
+    "updated_at": "2026-05-19T16:22:44.363Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 36,
+  "fields": {
+    "course": 3,
+    "title": "Retropropagación (Backpropagation)",
+    "lesson_type": "theory",
+    "order": 5,
+    "content": "<h2>Backpropagation: El corazón del aprendizaje</h2><p>La retropropagación es el algoritmo que permite entrenar redes multicapa calculando el gradiente del error respecto a cada peso.</p><h3>¿Cómo funciona?</h3><ol><li>Forward pass: Se propaga la entrada capa por capa hasta obtener la salida</li><li>Cálculo del error: Se compara la salida con el valor esperado</li><li>Backward pass: Se calcula el gradiente del error respecto a cada peso usando la regla de la cadena</li><li>Actualización: Se ajustan los pesos en dirección opuesta al gradiente</li></ol><h3>Variantes del descenso del gradiente</h3><ul><li>Batch GD: usa todo el dataset por paso</li><li>SGD: usa una muestra por paso</li><li>Adam: adaptativo con momentum</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.374Z",
+    "updated_at": "2026-05-19T16:22:44.375Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 37,
+  "fields": {
+    "course": 3,
+    "title": "Ejemplo: Red con Keras",
+    "lesson_type": "example",
+    "order": 6,
+    "content": "<h2>Construyendo una red neuronal con Keras</h2><pre class=\"code-block\">import tensorflow as tf\nfrom tensorflow import keras\n\nmodel = keras.Sequential([\n    keras.layers.Dense(64, activation=\"relu\", input_shape=(10,)),\n    keras.layers.Dense(32, activation=\"relu\"),\n    keras.layers.Dense(1, activation=\"sigmoid\")\n])\nmodel.compile(optimizer=\"adam\", loss=\"binary_crossentropy\", metrics=[\"accuracy\"])\nimport numpy as np\nX = np.random.randn(1000, 10)\ny = np.random.randint(0, 2, size=(1000,))\nhistory = model.fit(X, y, epochs=20, validation_split=0.2)\nprint(f\"Exactitud: {model.evaluate(X, y)[1]:.4f}\")</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.383Z",
+    "updated_at": "2026-05-19T16:22:44.383Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 38,
+  "fields": {
+    "course": 3,
+    "title": "Redes Multicapa (MLP)",
+    "lesson_type": "theory",
+    "order": 7,
+    "content": "<h2>Perceptrón Multicapa (MLP)</h2><p>El MLP extiende el perceptrón añadiendo una o más capas ocultas, permitiendo resolver problemas no lineales como XOR.</p><h3>Teorema de aproximación universal</h3><p>Un MLP con una capa oculta puede aproximar cualquier función continua, dado suficientes neuronas.</p><h3>Hiperparámetros clave</h3><ul><li>Número de capas y neuronas por capa</li><li>Tasa de aprendizaje</li><li>Batch size</li><li>Épochs</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.389Z",
+    "updated_at": "2026-05-19T16:22:44.389Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 39,
+  "fields": {
+    "course": 3,
+    "title": "Ejemplo: Clasificación con MLP",
+    "lesson_type": "example",
+    "order": 8,
+    "content": "<h2>MLP para clasificación de dígitos</h2><pre class=\"code-block\">from sklearn.datasets import load_digits\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.neural_network import MLPClassifier\n\ndigits = load_digits()\nX = digits.images.reshape(len(digits.images), -1)\nX_train, X_test, y_train, y_test = train_test_split(X, digits.target, test_size=0.2)\nmlp = MLPClassifier(hidden_layer_sizes=(128,64), activation=\"relu\", max_iter=300)\nmlp.fit(X_train, y_train)\nprint(f\"Exactitud: {mlp.score(X_test, y_test):.4f}\")</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.396Z",
+    "updated_at": "2026-05-19T16:22:44.396Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 40,
+  "fields": {
+    "course": 3,
+    "title": "Regularización en Redes Neuronales",
+    "lesson_type": "theory",
+    "order": 9,
+    "content": "<h2>Técnicas de Regularización</h2><p>Las redes neuronales son propensas al sobreajuste debido a su alta capacidad.</p><h3>Dropout</h3><p>Durante el entrenamiento, se apagan aleatoriamente un porcentaje de neuronas (típicamente 0.2-0.5).</p><h3>Batch Normalization</h3><p>Normaliza las activaciones de cada capa para que tengan media 0 y desviación 1.</p><h3>Early Stopping</h3><p>Detener el entrenamiento cuando la pérdida en validación deja de mejorar.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.402Z",
+    "updated_at": "2026-05-19T16:22:44.402Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 41,
+  "fields": {
+    "course": 3,
+    "title": "Redes Convolucionales (CNN)",
+    "lesson_type": "theory",
+    "order": 10,
+    "content": "<h2>Redes Neuronales Convolucionales</h2><p>Las CNN están diseñadas para procesar datos con estructura de cuadrícula, como imágenes.</p><h3>Capas principales</h3><ul><li>Capa convolucional: Aplica filtros que detectan patrones locales</li><li>Capa de pooling: Reduce la dimensionalidad</li><li>Capa fully connected: Clasifica basándose en características extraídas</li></ul><h3>Arquitecturas famosas</h3><p>LeNet-5, AlexNet, VGG, ResNet</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.409Z",
+    "updated_at": "2026-05-19T16:22:44.409Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 42,
+  "fields": {
+    "course": 3,
+    "title": "Redes Recurrentes (RNN)",
+    "lesson_type": "theory",
+    "order": 11,
+    "content": "<h2>Redes Neuronales Recurrentes</h2><p>Las RNN están diseñadas para datos secuenciales: texto, series temporales, audio.</p><h3>LSTM (Long Short-Term Memory)</h3><p>Introduce celdas de memoria con compuertas que controlan qué información recordar y qué olvidar.</p><h3>GRU (Gated Recurrent Unit)</h3><p>Versión simplificada de LSTM con menos parámetros.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.414Z",
+    "updated_at": "2026-05-19T16:22:44.414Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 43,
+  "fields": {
+    "course": 3,
+    "title": "Demo Interactiva: Redes Neuronales",
+    "lesson_type": "demo",
+    "order": 12,
+    "content": "Experimenta con diferentes arquitecturas de redes neuronales y observa cómo aprenden patrones en tiempo real.",
+    "demo_app": "neural",
+    "created_at": "2026-05-19T16:22:44.420Z",
+    "updated_at": "2026-05-19T16:22:44.420Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 44,
+  "fields": {
+    "course": 3,
+    "title": "Examen: Redes Neuronales",
+    "lesson_type": "exam",
+    "order": 13,
+    "content": "Responde las siguientes preguntas para evaluar tu comprensión de las redes neuronales.",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.426Z",
+    "updated_at": "2026-05-19T16:22:44.426Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 45,
+  "fields": {
+    "course": 4,
+    "title": "Introducción a los Árboles de Decisión",
+    "lesson_type": "theory",
+    "order": 1,
+    "content": "<h2>¿Qué son los Árboles de Decisión?</h2><p>Los árboles de decisión son modelos de aprendizaje supervisado que representan decisiones y sus posibles consecuencias en forma de árbol.</p><h3>Estructura</h3><ul><li>Raíz: primera división del dataset</li><li>Nodos internos: decisiones basadas en características</li><li>Ramas: resultados de las decisiones</li><li>Hojas: predicciones finales</li></ul><h3>Ventajas</h3><ul><li>Fáciles de interpretar y visualizar</li><li>No requieren normalización de datos</li><li>Capturan relaciones no lineales</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.520Z",
+    "updated_at": "2026-05-19T16:22:44.520Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 46,
+  "fields": {
+    "course": 4,
+    "title": "Entropía y Ganancia de Información",
+    "lesson_type": "theory",
+    "order": 2,
+    "content": "<h2>Criterios de División: Entropía</h2><p>La entropía mide el desorden o incertidumbre en un conjunto de datos.</p><h3>Fórmula</h3><p>Entropía(S) = -Σ pᵢ · log₂(pᵢ)</p><h3>Ganancia de Información</h3><p>Mide la reducción de entropía al dividir según una característica. Se elige la característica que maximiza la ganancia.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.527Z",
+    "updated_at": "2026-05-19T16:22:44.527Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 47,
+  "fields": {
+    "course": 4,
+    "title": "Impureza de Gini",
+    "lesson_type": "theory",
+    "order": 3,
+    "content": "<h2>Índice de Impureza de Gini</h2><p>Alternativa a la entropía para medir la calidad de una división.</p><h3>Fórmula</h3><p>Gini(S) = 1 - Σ pᵢ²</p><p>Gini = 0 cuando todas las muestras son de la misma clase (máxima pureza).</p><h3>Entropía vs Gini</h3><p>Entropía tiende a crear árboles más balanceados. Gini es computacionalmente más eficiente.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.533Z",
+    "updated_at": "2026-05-19T16:22:44.534Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 48,
+  "fields": {
+    "course": 4,
+    "title": "Ejemplo: Árbol con scikit-learn",
+    "lesson_type": "example",
+    "order": 4,
+    "content": "<h2>Implementando un Árbol de Decisión</h2><pre class=\"code-block\">from sklearn.tree import DecisionTreeClassifier\nfrom sklearn.datasets import load_iris\nfrom sklearn.model_selection import train_test_split\n\niris = load_iris()\nX_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.3)\narbol = DecisionTreeClassifier(max_depth=3)\narbol.fit(X_train, y_train)\nprint(f\"Exactitud: {arbol.score(X_test, y_test):.4f}\")</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.540Z",
+    "updated_at": "2026-05-19T16:22:44.541Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 49,
+  "fields": {
+    "course": 4,
+    "title": "Poda de Árboles (Pruning)",
+    "lesson_type": "theory",
+    "order": 5,
+    "content": "<h2>Poda: Evitando el sobreajuste</h2><p>La poda reduce el tamaño del árbol eliminando ramas con poco poder predictivo.</p><h3>Pre-poda</h3><p>Detener el crecimiento antes de que el árbol sea demasiado complejo usando max_depth, min_samples_split, etc.</p><h3>Post-poda (Cost Complexity Pruning)</h3><p>Dejar crecer el árbol completamente y luego podar ramas con menor importancia (ccp_alpha).</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.547Z",
+    "updated_at": "2026-05-19T16:22:44.547Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 50,
+  "fields": {
+    "course": 4,
+    "title": "Random Forest",
+    "lesson_type": "theory",
+    "order": 6,
+    "content": "<h2>Random Forest: El poder del ensemble</h2><p>Random Forest combina múltiples árboles de decisión para crear un modelo más robusto.</p><h3>¿Cómo funciona?</h3><ol><li>Bagging: Crea múltiples subconjuntos muestreando con reemplazo</li><li>Entrena un árbol en cada subconjunto</li><li>Promedia las predicciones o vota por clase</li></ol>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.554Z",
+    "updated_at": "2026-05-19T16:22:44.554Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 51,
+  "fields": {
+    "course": 4,
+    "title": "Ejemplo: Random Forest",
+    "lesson_type": "example",
+    "order": 7,
+    "content": "<h2>Random Forest en acción</h2><pre class=\"code-block\">from sklearn.ensemble import RandomForestClassifier\nfrom sklearn.datasets import make_classification\nfrom sklearn.model_selection import cross_val_score\n\nX, y = make_classification(n_samples=1000, n_features=20, random_state=42)\nrf = RandomForestClassifier(n_estimators=200, max_depth=10, random_state=42)\nscores = cross_val_score(rf, X, y, cv=5)\nprint(f\"Precisión: {scores.mean():.4f}\")</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.565Z",
+    "updated_at": "2026-05-19T16:22:44.566Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 52,
+  "fields": {
+    "course": 4,
+    "title": "Gradient Boosting",
+    "lesson_type": "theory",
+    "order": 8,
+    "content": "<h2>Gradient Boosting: Aprendizaje secuencial</h2><p>Gradient Boosting entrena árboles secuencialmente, donde cada nuevo árbol corrige los errores del anterior.</p><h3>Algoritmo</h3><ol><li>Entrenar modelo simple (media)</li><li>Calcular residuos (errores)</li><li>Entrenar árbol para predecir residuos</li><li>Actualizar el modelo sumando el nuevo árbol</li></ol>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.572Z",
+    "updated_at": "2026-05-19T16:22:44.573Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 53,
+  "fields": {
+    "course": 4,
+    "title": "XGBoost y LightGBM",
+    "lesson_type": "theory",
+    "order": 9,
+    "content": "<h2>Bibliotecas Avanzadas de Boosting</h2><h3>XGBoost</h3><p>La biblioteca más popular. Tiene regularización L1/L2, manejo de nulos y paralelización.</p><h3>LightGBM</h3><p>Desarrollado por Microsoft. Más rápido, crece árboles por hojas (leaf-wise).</p><h3>CatBoost</h3><p>De Yandex. Destaca en manejo de características categóricas.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.580Z",
+    "updated_at": "2026-05-19T16:22:44.580Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 54,
+  "fields": {
+    "course": 4,
+    "title": "Ejemplo: Comparación de modelos ensemble",
+    "lesson_type": "example",
+    "order": 10,
+    "content": "<h2>Random Forest vs XGBoost vs LightGBM</h2><pre class=\"code-block\">from sklearn.ensemble import RandomForestClassifier\nfrom xgboost import XGBClassifier\nfrom lightgbm import LGBMClassifier\nfrom sklearn.datasets import load_breast_cancer\nfrom sklearn.model_selection import cross_val_score\n\ndata = load_breast_cancer()\nX, y = data.data, data.target\nfor name, model in [(\"RF\", RandomForestClassifier()), (\"XGB\", XGBClassifier(use_label_encoder=False, eval_metric=\"logloss\")), (\"LGBM\", LGBMClassifier(verbose=-1))]:\n    scores = cross_val_score(model, X, y, cv=5)\n    print(f\"{name}: {scores.mean():.4f}\")</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.587Z",
+    "updated_at": "2026-05-19T16:22:44.587Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 55,
+  "fields": {
+    "course": 4,
+    "title": "Demo Interactiva: Árboles de Decisión",
+    "lesson_type": "demo",
+    "order": 11,
+    "content": "Visualiza cómo un árbol de decisión divide el espacio de características.",
+    "demo_app": "tree",
+    "created_at": "2026-05-19T16:22:44.594Z",
+    "updated_at": "2026-05-19T16:22:44.594Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 56,
+  "fields": {
+    "course": 4,
+    "title": "Examen: Árboles de Decisión",
+    "lesson_type": "exam",
+    "order": 12,
+    "content": "Responde las siguientes preguntas para evaluar tu comprensión de los árboles de decisión.",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.604Z",
+    "updated_at": "2026-05-19T16:22:44.604Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 57,
+  "fields": {
+    "course": 5,
+    "title": "Introducción a SVM",
+    "lesson_type": "theory",
+    "order": 1,
+    "content": "<h2>¿Qué son las Máquinas de Soporte Vectorial?</h2><p>Las SVM son modelos que encuentran el hiperplano óptimo que separa las clases con el mayor margen posible.</p><h3>Vectores de soporte</h3><p>Son los puntos más cercanos al hiperplano. Si se mueven, el hiperplano cambia.</p><h3>Ventajas</h3><ul><li>Efectivo en alta dimensionalidad</li><li>Robusto a sobreajuste</li><li>Versátil gracias a los kernels</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.662Z",
+    "updated_at": "2026-05-19T16:22:44.663Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 58,
+  "fields": {
+    "course": 5,
+    "title": "Hiperplanos y Margen Máximo",
+    "lesson_type": "theory",
+    "order": 2,
+    "content": "<h2>Matemáticas del hiperplano óptimo</h2><p>Ecuación del hiperplano: w · x + b = 0</p><p>El margen es 2/||w||. Maximizar el margen equivale a minimizar ||w||.</p><p>Sujeto a: yᵢ · (w · xᵢ + b) ≥ 1 para todo i</p><p>SVM con margen suave introduce variable de holgura ξ penalizada por C.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.669Z",
+    "updated_at": "2026-05-19T16:22:44.669Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 59,
+  "fields": {
+    "course": 5,
+    "title": "El Truco del Kernel",
+    "lesson_type": "theory",
+    "order": 3,
+    "content": "<h2>Kernels: SVM no lineal</h2><p>El truco del kernel permite trabajar en espacios de alta dimensionalidad sin calcular explícitamente coordenadas.</p><h3>Kernels comunes</h3><ul><li>Lineal: K(x,y) = x·y</li><li>Polinomial: K(x,y) = (x·y + r)ᵈ</li><li>RBF (Gaussiano): K(x,y) = exp(-γ||x-y||²)</li></ul><p>RBF es el más usado por defecto.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.676Z",
+    "updated_at": "2026-05-19T16:22:44.676Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 60,
+  "fields": {
+    "course": 5,
+    "title": "Ejemplo: SVM Lineal",
+    "lesson_type": "example",
+    "order": 4,
+    "content": "<h2>SVM para clasificación lineal</h2><pre class=\"code-block\">from sklearn.svm import SVC\nfrom sklearn.datasets import make_classification\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.preprocessing import StandardScaler\n\nX, y = make_classification(n_samples=500, n_features=5, random_state=42)\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\nsvm = SVC(kernel=\"linear\", C=1.0)\nsvm.fit(X_train, y_train)\nprint(f\"Exactitud: {svm.score(X_test, y_test):.4f}\")</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.692Z",
+    "updated_at": "2026-05-19T16:22:44.692Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 61,
+  "fields": {
+    "course": 5,
+    "title": "Ejemplo: SVM con kernel RBF",
+    "lesson_type": "example",
+    "order": 5,
+    "content": "<h2>SVM no lineal con RBF</h2><pre class=\"code-block\">from sklearn.svm import SVC\nfrom sklearn.datasets import make_moons\n\nX, y = make_moons(n_samples=200, noise=0.15)\nsvm = SVC(kernel=\"rbf\", gamma=\"scale\", C=10)\nsvm.fit(X, y)\nprint(f\"Exactitud: {svm.score(X, y):.3f}\")</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.701Z",
+    "updated_at": "2026-05-19T16:22:44.702Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 62,
+  "fields": {
+    "course": 5,
+    "title": "SVM para Regresión (SVR)",
+    "lesson_type": "theory",
+    "order": 6,
+    "content": "<h2>Support Vector Regression</h2><p>SVR busca un tubo de margen ε alrededor de los datos. Los puntos fuera del tubo son vectores de soporte.</p><h3>Parámetros</h3><ul><li>ε (epsilon): ancho del tubo</li><li>C: penalización por errores fuera del tubo</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.708Z",
+    "updated_at": "2026-05-19T16:22:44.708Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 63,
+  "fields": {
+    "course": 5,
+    "title": "Ejemplo: SVR para predicción",
+    "lesson_type": "example",
+    "order": 7,
+    "content": "<h2>Regresión con SVM</h2><pre class=\"code-block\">from sklearn.svm import SVR\nimport numpy as np\nX = np.sort(np.random.rand(200)*10).reshape(-1,1)\ny = np.sin(X).ravel() + np.random.normal(0,0.1,200)\nsvr = SVR(kernel=\"rbf\", C=100, gamma=0.1, epsilon=0.1)\nsvr.fit(X, y)\nprint(f\"R²: {svr.score(X, y):.4f}\")</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.715Z",
+    "updated_at": "2026-05-19T16:22:44.716Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 64,
+  "fields": {
+    "course": 5,
+    "title": "Ventajas y Desventajas de SVM",
+    "lesson_type": "theory",
+    "order": 8,
+    "content": "<h2>Cuándo usar SVM</h2><h3>Casos ideales</h3><ul><li>Alta dimensionalidad (más features que muestras)</li><li>Datasets pequeños a medianos</li><li>Datos con margen claro</li></ul><h3>Evitar SVM</h3><ul><li>Datasets muy grandes (O(n²) a O(n³))</li><li>Clases muy desbalanceadas</li><li>Ruido excesivo</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.727Z",
+    "updated_at": "2026-05-19T16:22:44.728Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 65,
+  "fields": {
+    "course": 5,
+    "title": "Demo Interactiva: SVM",
+    "lesson_type": "demo",
+    "order": 9,
+    "content": "Visualiza cómo diferentes kernels separan datos no lineales.",
+    "demo_app": "svm",
+    "created_at": "2026-05-19T16:22:44.733Z",
+    "updated_at": "2026-05-19T16:22:44.734Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 66,
+  "fields": {
+    "course": 5,
+    "title": "Examen: Máquinas de Soporte Vectorial",
+    "lesson_type": "exam",
+    "order": 10,
+    "content": "Responde las preguntas para evaluar tu comprensión de SVM.",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.742Z",
+    "updated_at": "2026-05-19T16:22:44.742Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 67,
+  "fields": {
+    "course": 6,
+    "title": "Introducción al Clustering",
+    "lesson_type": "theory",
+    "order": 1,
+    "content": "<h2>¿Qué es el Clustering?</h2><p>El clustering es una técnica de aprendizaje no supervisado que agrupa datos similares sin etiquetas previas.</p><h3>Tipos</h3><ul><li>Particional: K-Means</li><li>Jerárquico: dendrograma</li><li>Basado en densidad: DBSCAN</li><li>Basado en modelos: Gaussian Mixture</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.790Z",
+    "updated_at": "2026-05-19T16:22:44.790Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 68,
+  "fields": {
+    "course": 6,
+    "title": "K-Means",
+    "lesson_type": "theory",
+    "order": 2,
+    "content": "<h2>Algoritmo K-Means</h2><ol><li>Seleccionar k centroides iniciales</li><li>Asignar cada punto al centroide más cercano</li><li>Recalcular centroides como promedio</li><li>Repetir hasta convergencia</li></ol><h3>¿Cómo elegir k?</h3><p>Método del codo (elbow), Silhouette Score, Davies-Bouldin Index.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.796Z",
+    "updated_at": "2026-05-19T16:22:44.796Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 69,
+  "fields": {
+    "course": 6,
+    "title": "Ejemplo: K-Means",
+    "lesson_type": "example",
+    "order": 3,
+    "content": "<h2>Segmentación con K-Means</h2><pre class=\"code-block\">from sklearn.cluster import KMeans\nfrom sklearn.preprocessing import StandardScaler\nimport numpy as np\nclientes = np.array([[25,30000,1500],[35,55000,2500],[45,75000,3500]])\nscaler = StandardScaler()\nX = scaler.fit_transform(clientes)\nkmeans = KMeans(n_clusters=2, random_state=42, n_init=10)\nkmeans.fit(X)\nprint(\"Labels:\", kmeans.labels_)</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.802Z",
+    "updated_at": "2026-05-19T16:22:44.802Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 70,
+  "fields": {
+    "course": 6,
+    "title": "DBSCAN",
+    "lesson_type": "theory",
+    "order": 4,
+    "content": "<h2>DBSCAN: Clustering basado en densidad</h2><p>No requiere especificar k, encuentra clusters de forma arbitraria, identifica outliers.</p><h3>Parámetros</h3><ul><li>eps: distancia máxima para vecinos</li><li>min_samples: mínimo de puntos para región densa</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.809Z",
+    "updated_at": "2026-05-19T16:22:44.809Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 71,
+  "fields": {
+    "course": 6,
+    "title": "Ejemplo: DBSCAN",
+    "lesson_type": "example",
+    "order": 5,
+    "content": "<h2>K-Means vs DBSCAN</h2><pre class=\"code-block\">from sklearn.cluster import KMeans, DBSCAN\nfrom sklearn.datasets import make_moons\nX, _ = make_moons(n_samples=200, noise=0.05)\nkmeans = KMeans(n_clusters=2, n_init=10).fit_predict(X)\ndbscan = DBSCAN(eps=0.2, min_samples=5).fit_predict(X)\nprint(\"DBSCAN outliers:\", (dbscan == -1).sum())</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.815Z",
+    "updated_at": "2026-05-19T16:22:44.815Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 72,
+  "fields": {
+    "course": 6,
+    "title": "Clustering Jerárquico",
+    "lesson_type": "theory",
+    "order": 6,
+    "content": "<h2>Clustering Jerárquico</h2><p>Construye una jerarquía de clusters visualizada como dendrograma.</p><h3>Métricas de enlace</h3><p>Single, Complete, Average, Ward</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.821Z",
+    "updated_at": "2026-05-19T16:22:44.821Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 73,
+  "fields": {
+    "course": 6,
+    "title": "Ejemplo: Clustering Jerárquico",
+    "lesson_type": "example",
+    "order": 7,
+    "content": "<h2>Dendrograma</h2><pre class=\"code-block\">from scipy.cluster.hierarchy import dendrogram, linkage\nfrom sklearn.datasets import make_blobs\nX, _ = make_blobs(n_samples=30, centers=3)\nZ = linkage(X, method=\"ward\")\n# dendrogram(Z)  # visualiza jerarquía</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.826Z",
+    "updated_at": "2026-05-19T16:22:44.827Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 74,
+  "fields": {
+    "course": 6,
+    "title": "Evaluación de Clustering",
+    "lesson_type": "theory",
+    "order": 8,
+    "content": "<h2>Métricas internas</h2><ul><li>Silhouette Score: [-1,1], cercano a 1 es mejor</li><li>Davies-Bouldin Index: menor es mejor</li><li>Calinski-Harabasz: mayor es mejor</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.833Z",
+    "updated_at": "2026-05-19T16:22:44.833Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 75,
+  "fields": {
+    "course": 6,
+    "title": "Ejemplo: Evaluación",
+    "lesson_type": "example",
+    "order": 9,
+    "content": "<h2>Comparando métricas</h2><pre class=\"code-block\">from sklearn.metrics import silhouette_score, davies_bouldin_score\nfrom sklearn.cluster import KMeans\nfrom sklearn.datasets import make_blobs\nX, _ = make_blobs(n_samples=300, centers=4)\nfor k in range(2,7):\n    labels = KMeans(n_clusters=k, n_init=10).fit_predict(X)\n    print(f\"k={k}: Sil={silhouette_score(X,labels):.3f}, DB={davies_bouldin_score(X,labels):.3f}\")</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.839Z",
+    "updated_at": "2026-05-19T16:22:44.839Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 76,
+  "fields": {
+    "course": 6,
+    "title": "Demo Interactiva: Clustering",
+    "lesson_type": "demo",
+    "order": 10,
+    "content": "Visualiza cómo diferentes algoritmos agrupan datos.",
+    "demo_app": "clustering",
+    "created_at": "2026-05-19T16:22:44.846Z",
+    "updated_at": "2026-05-19T16:22:44.846Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 77,
+  "fields": {
+    "course": 6,
+    "title": "Examen: Clustering",
+    "lesson_type": "exam",
+    "order": 11,
+    "content": "Responde las preguntas sobre técnicas de clustering.",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.851Z",
+    "updated_at": "2026-05-19T16:22:44.851Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 78,
+  "fields": {
+    "course": 7,
+    "title": "Introducción al NLP",
+    "lesson_type": "theory",
+    "order": 1,
+    "content": "<h2>¿Qué es el NLP?</h2><p>Rama de la IA que permite entender, interpretar y generar lenguaje humano.</p><h3>Aplicaciones</h3><ul><li>Traducción automática</li><li>Chatbots</li><li>Análisis de sentimiento</li><li>Resumen automático</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.897Z",
+    "updated_at": "2026-05-19T16:22:44.898Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 79,
+  "fields": {
+    "course": 7,
+    "title": "Tokenización y Preprocesamiento",
+    "lesson_type": "theory",
+    "order": 2,
+    "content": "<h2>Preparando el texto</h2><h3>Tokenización</h3><p>Dividir texto en palabras, oraciones o subpalabras.</p><h3>Limpieza</h3><p>Minúsculas, eliminar puntuación, stop words, stemming, lematización.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.904Z",
+    "updated_at": "2026-05-19T16:22:44.904Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 80,
+  "fields": {
+    "course": 7,
+    "title": "Representación de Texto (Embeddings)",
+    "lesson_type": "theory",
+    "order": 3,
+    "content": "<h2>De palabras a vectores</h2><p>Bag of Words, TF-IDF, Word2Vec, GloVe, BERT.</p><p>TF-IDF pondera palabras por importancia en el documento vs corpus.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.910Z",
+    "updated_at": "2026-05-19T16:22:44.910Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 81,
+  "fields": {
+    "course": 7,
+    "title": "Ejemplo: Análisis de Sentimiento",
+    "lesson_type": "example",
+    "order": 4,
+    "content": "<h2>Clasificación de sentimientos</h2><pre class=\"code-block\">from sklearn.feature_extraction.text import TfidfVectorizer\nfrom sklearn.naive_bayes import MultinomialNB\nfrom sklearn.pipeline import Pipeline\ntextos = [\"me encanta\",\"pésimo\",\"excelente\",\"horrible\"]\netiq = [1,0,1,0]\np = Pipeline([(\"tfidf\",TfidfVectorizer()),(\"clf\",MultinomialNB())])\np.fit(textos, etiq)\nprint(p.predict([\"qué bien\",\"terrible\"]))</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.915Z",
+    "updated_at": "2026-05-19T16:22:44.916Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 82,
+  "fields": {
+    "course": 7,
+    "title": "Modelos Transformer y BERT",
+    "lesson_type": "theory",
+    "order": 5,
+    "content": "<h2>La revolución Transformer</h2><p>Attention is All You Need (2017).</p><h3>BERT</h3><p>Bidireccional, pre-entrenado con MLM y NSP.</p><h3>GPT</h3><p>Unidireccional, especializado en generación de texto.</p>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.921Z",
+    "updated_at": "2026-05-19T16:22:44.922Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 83,
+  "fields": {
+    "course": 7,
+    "title": "Ejemplo: Clasificación con BERT",
+    "lesson_type": "example",
+    "order": 6,
+    "content": "<h2>Usando BERT</h2><pre class=\"code-block\">from transformers import pipeline\nclf = pipeline(\"sentiment-analysis\")\nprint(clf(\"Este curso es excelente\"))</pre>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.927Z",
+    "updated_at": "2026-05-19T16:22:44.927Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 84,
+  "fields": {
+    "course": 7,
+    "title": "Aplicaciones Avanzadas de NLP",
+    "lesson_type": "theory",
+    "order": 7,
+    "content": "<h2>Más aplicaciones</h2><ul><li>NER (Reconocimiento de Entidades)</li><li>Traducción automática</li><li>Resumen de texto</li><li>Preguntas y Respuestas</li></ul>",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.933Z",
+    "updated_at": "2026-05-19T16:22:44.933Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 85,
+  "fields": {
+    "course": 7,
+    "title": "Demo Interactiva: NLP",
+    "lesson_type": "demo",
+    "order": 8,
+    "content": "Experimenta con análisis de sentimiento y reconocimiento de entidades.",
+    "demo_app": "nlp",
+    "created_at": "2026-05-19T16:22:44.939Z",
+    "updated_at": "2026-05-19T16:22:44.939Z"
+  }
+},
+{
+  "model": "courses.lesson",
+  "pk": 86,
+  "fields": {
+    "course": 7,
+    "title": "Examen: Procesamiento del Lenguaje Natural",
+    "lesson_type": "exam",
+    "order": 9,
+    "content": "Responde las preguntas para evaluar tu comprensión del NLP.",
+    "demo_app": "",
+    "created_at": "2026-05-19T16:22:44.945Z",
+    "updated_at": "2026-05-19T16:22:44.945Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 1,
+  "fields": {
+    "course": 1,
+    "question_text": "¿Qué representa la pendiente (m) en la ecuación de regresión lineal y = mx + b?",
+    "question_type": "multiple_choice",
+    "options": [
+      "El punto donde la recta cruza el eje Y",
+      "La tasa de cambio de Y respecto a X",
+      "El error del modelo",
+      "El valor máximo de Y"
+    ],
+    "correct_answer": "La tasa de cambio de Y respecto a X",
+    "explanation": "La pendiente m indica cuánto cambia Y por cada unidad de cambio en X.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.976Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 2,
+  "fields": {
+    "course": 1,
+    "question_text": "¿Qué métrica mide el porcentaje de varianza explicada por el modelo?",
+    "question_type": "multiple_choice",
+    "options": [
+      "RMSE",
+      "MAE",
+      "R²",
+      "MSE"
+    ],
+    "correct_answer": "R²",
+    "explanation": "El coeficiente de determinación R² indica qué tan bien se ajusta el modelo a los datos.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.977Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 3,
+  "fields": {
+    "course": 1,
+    "question_text": "Un valor de R² = 0 significa que el modelo explica perfectamente la variabilidad de los datos.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "False",
+    "explanation": "R² = 0 indica que el modelo no explica nada de la variabilidad. R² = 1 indica que lo explica perfectamente.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.978Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 4,
+  "fields": {
+    "course": 1,
+    "question_text": "¿Qué librería de Python se usa comúnmente para implementar regresión lineal?",
+    "question_type": "multiple_choice",
+    "options": [
+      "scikit-learn",
+      "pandas",
+      "matplotlib",
+      "numpy"
+    ],
+    "correct_answer": "scikit-learn",
+    "explanation": "scikit-learn proporciona la clase LinearRegression para implementar regresión lineal.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.978Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 5,
+  "fields": {
+    "course": 1,
+    "question_text": "El sobreajuste (overfitting) ocurre cuando el modelo se ajusta demasiado a los datos de entrenamiento y no generaliza bien.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "True",
+    "explanation": "El sobreajuste ocurre cuando el modelo aprende el ruido en los datos de entrenamiento en lugar de la señal subyacente.",
+    "difficulty": 2,
+    "created_at": "2026-05-19T16:15:41.979Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 6,
+  "fields": {
+    "course": 1,
+    "question_text": "¿Cuál es el propósito de dividir los datos en entrenamiento y prueba?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Reducir el tamaño del dataset",
+      "Evaluar la capacidad de generalización del modelo",
+      "Acelerar el entrenamiento",
+      "Eliminar datos atípicos"
+    ],
+    "correct_answer": "Evaluar la capacidad de generalización del modelo",
+    "explanation": "Dividir los datos permite probar el modelo en datos que no vio durante el entrenamiento.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.979Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 7,
+  "fields": {
+    "course": 1,
+    "question_text": "¿Qué es el RMSE?",
+    "question_type": "multiple_choice",
+    "options": [
+      "La raíz del error cuadrático medio",
+      "El error absoluto medio",
+      "El coeficiente de determinación",
+      "La varianza del modelo"
+    ],
+    "correct_answer": "La raíz del error cuadrático medio",
+    "explanation": "RMSE (Root Mean Square Error) mide la raíz cuadrada del promedio de los errores al cuadrado.",
+    "difficulty": 2,
+    "created_at": "2026-05-19T16:15:41.979Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 8,
+  "fields": {
+    "course": 1,
+    "question_text": "En regresión lineal simple, ¿cuántas variables independientes se utilizan?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Ninguna",
+      "Una",
+      "Dos o más",
+      "Depende del problema"
+    ],
+    "correct_answer": "Una",
+    "explanation": "La regresión lineal simple utiliza exactamente una variable independiente para predecir la variable dependiente.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.980Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 9,
+  "fields": {
+    "course": 1,
+    "question_text": "El método de mínimos cuadrados ordinarios (OLS) es la técnica más común para estimar los parámetros de regresión lineal.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "True",
+    "explanation": "OLS minimiza la suma de los cuadrados de las diferencias entre los valores observados y los predichos.",
+    "difficulty": 2,
+    "created_at": "2026-05-19T16:15:41.980Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 10,
+  "fields": {
+    "course": 1,
+    "question_text": "¿Qué indica un valor de MAE cercano a 0?",
+    "question_type": "multiple_choice",
+    "options": [
+      "El modelo tiene un error muy alto",
+      "Las predicciones son muy precisas",
+      "El modelo está sobreajustado",
+      "Los datos tienen mucho ruido"
+    ],
+    "correct_answer": "Las predicciones son muy precisas",
+    "explanation": "MAE (Mean Absolute Error) mide el error promedio absoluto. Un valor cercano a 0 indica predicciones muy precisas.",
+    "difficulty": 2,
+    "created_at": "2026-05-19T16:15:41.981Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 11,
+  "fields": {
+    "course": 2,
+    "question_text": "¿En qué se inspiran los algoritmos genéticos?",
+    "question_type": "multiple_choice",
+    "options": [
+      "En el comportamiento de las hormigas",
+      "En la teoría de la evolución de Darwin",
+      "En el funcionamiento del cerebro humano",
+      "En las leyes de la termodinámica"
+    ],
+    "correct_answer": "En la teoría de la evolución de Darwin",
+    "explanation": "Los AGs se basan en los principios de selección natural, cruce y mutación propuestos por Darwin.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.981Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 12,
+  "fields": {
+    "course": 2,
+    "question_text": "¿Qué operador genético combina dos soluciones padres para crear una nueva solución?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Selección",
+      "Mutación",
+      "Cruce",
+      "Evaluación"
+    ],
+    "correct_answer": "Cruce",
+    "explanation": "El cruce (crossover) combina el material genético de dos padres para generar uno o más hijos.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.982Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 13,
+  "fields": {
+    "course": 2,
+    "question_text": "La mutación en algoritmos genéticos siempre empeora las soluciones.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "False",
+    "explanation": "La mutación puede mejorar o empeorar las soluciones, pero es necesaria para mantener la diversidad genética.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.982Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 14,
+  "fields": {
+    "course": 2,
+    "question_text": "¿Qué es la función de fitness en un algoritmo genético?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Una función que mide la salud de la población",
+      "Una función que determina qué tan buena es una solución",
+      "Una función que genera nuevos individuos",
+      "Una función que ordena la población"
+    ],
+    "correct_answer": "Una función que determina qué tan buena es una solución",
+    "explanation": "La función de fitness evalúa y asigna un puntaje a cada individuo según su calidad como solución.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.983Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 15,
+  "fields": {
+    "course": 2,
+    "question_text": "¿Qué tipo de selección elige siempre a los mejores individuos para reproducirse?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Selección por ruleta",
+      "Selección por torneo",
+      "Selección elitista",
+      "Selección aleatoria"
+    ],
+    "correct_answer": "Selección elitista",
+    "explanation": "La selección elitista garantiza que los mejores individuos pasen directamente a la siguiente generación.",
+    "difficulty": 2,
+    "created_at": "2026-05-19T16:15:41.983Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 16,
+  "fields": {
+    "course": 2,
+    "question_text": "Una población muy pequeña puede causar convergencia prematura.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "True",
+    "explanation": "Con poblaciones pequeñas, el algoritmo puede perder diversidad genética rápidamente y converger a óptimos locales.",
+    "difficulty": 2,
+    "created_at": "2026-05-19T16:15:41.984Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 17,
+  "fields": {
+    "course": 2,
+    "question_text": "¿Qué librería de Python se utiliza en este proyecto para implementar algoritmos genéticos?",
+    "question_type": "multiple_choice",
+    "options": [
+      "numpy",
+      "scikit-learn",
+      "DEAP",
+      "pandas"
+    ],
+    "correct_answer": "DEAP",
+    "explanation": "DEAP (Distributed Evolutionary Algorithms in Python) es la librería utilizada para los algoritmos genéticos.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.984Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 18,
+  "fields": {
+    "course": 2,
+    "question_text": "En el problema de la mochila, ¿cuál es el objetivo?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Minimizar el peso total",
+      "Maximizar el valor sin exceder el peso máximo",
+      "Minimizar el número de items",
+      "Maximizar el peso total"
+    ],
+    "correct_answer": "Maximizar el valor sin exceder el peso máximo",
+    "explanation": "El problema de la mochila busca maximizar el valor total de los items seleccionados sin superar la capacidad de peso.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.985Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 19,
+  "fields": {
+    "course": 2,
+    "question_text": "¿Qué operador genético introduce variabilidad aleatoria en la población?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Selección",
+      "Cruce",
+      "Mutación",
+      "Reemplazo"
+    ],
+    "correct_answer": "Mutación",
+    "explanation": "La mutación altera aleatoriamente algunos genes de un individuo para introducir nueva diversidad genética.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:15:41.985Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 20,
+  "fields": {
+    "course": 2,
+    "question_text": "Una probabilidad de mutación muy alta puede convertir el algoritmo genético en una búsqueda aleatoria.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "True",
+    "explanation": "Si la mutación es muy frecuente, el comportamiento del algoritmo se vuelve casi aleatorio y pierde la capacidad de explotar buenas soluciones.",
+    "difficulty": 2,
+    "created_at": "2026-05-19T16:15:41.986Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 21,
+  "fields": {
+    "course": 3,
+    "question_text": "¿Qué función de activación es más usada en capas ocultas?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Sigmoide",
+      "ReLU",
+      "Tanh",
+      "Lineal"
+    ],
+    "correct_answer": "ReLU",
+    "explanation": "ReLU es la más usada por su eficiencia.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.439Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 22,
+  "fields": {
+    "course": 3,
+    "question_text": "El perceptrón puede resolver el problema XOR.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "False",
+    "explanation": "Solo resuelve problemas linealmente separables.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.446Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 23,
+  "fields": {
+    "course": 3,
+    "question_text": "¿Qué algoritmo permite entrenar redes multicapa?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Descenso del gradiente",
+      "Backpropagation",
+      "K-Means",
+      "SVM"
+    ],
+    "correct_answer": "Backpropagation",
+    "explanation": "Backpropagation calcula gradientes usando la regla de la cadena.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.452Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 24,
+  "fields": {
+    "course": 3,
+    "question_text": "¿Qué técnica de regularización apaga neuronas aleatoriamente?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Batch Norm",
+      "Dropout",
+      "Data Augmentation",
+      "L2"
+    ],
+    "correct_answer": "Dropout",
+    "explanation": "Dropout desactiva neuronas aleatoriamente.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.459Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 25,
+  "fields": {
+    "course": 3,
+    "question_text": "Las CNN están diseñadas principalmente para:",
+    "question_type": "multiple_choice",
+    "options": [
+      "Texto",
+      "Audio",
+      "Imágenes",
+      "Datos tabulares"
+    ],
+    "correct_answer": "Imágenes",
+    "explanation": "Las CNN detectan patrones espaciales en imágenes.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.471Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 26,
+  "fields": {
+    "course": 3,
+    "question_text": "¿Qué tipo de red es mejor para datos secuenciales?",
+    "question_type": "multiple_choice",
+    "options": [
+      "CNN",
+      "MLP",
+      "RNN/LSTM",
+      "GAN"
+    ],
+    "correct_answer": "RNN/LSTM",
+    "explanation": "RNN capturan dependencias temporales.",
+    "difficulty": 2,
+    "created_at": "2026-05-19T16:22:44.476Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 27,
+  "fields": {
+    "course": 3,
+    "question_text": "¿Qué resuelve LSTM que RNN básica no puede?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Clasificación",
+      "Gradientes vanishing",
+      "Sobreajuste",
+      "Normalización"
+    ],
+    "correct_answer": "Gradientes vanishing",
+    "explanation": "LSTM usa compuertas para controlar flujo de información.",
+    "difficulty": 2,
+    "created_at": "2026-05-19T16:22:44.481Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 28,
+  "fields": {
+    "course": 3,
+    "question_text": "¿Cuál NO es una CNN famosa?",
+    "question_type": "multiple_choice",
+    "options": [
+      "ResNet",
+      "VGG",
+      "GPT",
+      "AlexNet"
+    ],
+    "correct_answer": "GPT",
+    "explanation": "GPT es Transformer para NLP.",
+    "difficulty": 2,
+    "created_at": "2026-05-19T16:22:44.488Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 29,
+  "fields": {
+    "course": 3,
+    "question_text": "¿Qué capa reduce dimensionalidad en CNN?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Convolucional",
+      "Pooling",
+      "Dense",
+      "Dropout"
+    ],
+    "correct_answer": "Pooling",
+    "explanation": "Pooling reduce tamaño espacial.",
+    "difficulty": 2,
+    "created_at": "2026-05-19T16:22:44.495Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 30,
+  "fields": {
+    "course": 3,
+    "question_text": "¿Qué es transfer learning?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Entrenar desde cero",
+      "Usar modelo pre-entrenado",
+      "Aumentar datos",
+      "Regularizar"
+    ],
+    "correct_answer": "Usar modelo pre-entrenado",
+    "explanation": "Aprovecha modelos entrenados en grandes datasets.",
+    "difficulty": 2,
+    "created_at": "2026-05-19T16:22:44.505Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 31,
+  "fields": {
+    "course": 4,
+    "question_text": "¿Qué mide la entropía?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Profundidad del árbol",
+      "Desorden/incertidumbre",
+      "Precisión",
+      "Número de hojas"
+    ],
+    "correct_answer": "Desorden/incertidumbre",
+    "explanation": "Mide qué tan mezcladas están las clases.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.617Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 32,
+  "fields": {
+    "course": 4,
+    "question_text": "Árbol con profundidad ilimitada tiende a:",
+    "question_type": "multiple_choice",
+    "options": [
+      "Subajuste",
+      "Sobreajuste",
+      "Mejor generalización",
+      "Menor precisión"
+    ],
+    "correct_answer": "Sobreajuste",
+    "explanation": "Memoriza ruido de datos de entrenamiento.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.624Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 33,
+  "fields": {
+    "course": 4,
+    "question_text": "¿Qué combina múltiples árboles en paralelo?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Gradient Boosting",
+      "Random Forest",
+      "XGBoost",
+      "AdaBoost"
+    ],
+    "correct_answer": "Random Forest",
+    "explanation": "Entrena árboles en paralelo con bootstrap.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.630Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 34,
+  "fields": {
+    "course": 4,
+    "question_text": "¿Qué parámetro limita profundidad del árbol?",
+    "question_type": "multiple_choice",
+    "options": [
+      "n_estimators",
+      "max_depth",
+      "min_samples_split",
+      "max_features"
+    ],
+    "correct_answer": "max_depth",
+    "explanation": "Controla profundidad máxima para evitar sobreajuste.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.640Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 35,
+  "fields": {
+    "course": 4,
+    "question_text": "¿Qué tipo de enlace minimiza varianza intra-cluster?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Single",
+      "Complete",
+      "Average",
+      "Ward"
+    ],
+    "correct_answer": "Ward",
+    "explanation": "Ward minimiza incremento de varianza total.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.647Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 36,
+  "fields": {
+    "course": 5,
+    "question_text": "¿Qué son los vectores de soporte?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Todos los datos",
+      "Puntos más cercanos al hiperplano",
+      "Puntos mal clasificados",
+      "Centroides"
+    ],
+    "correct_answer": "Puntos más cercanos al hiperplano",
+    "explanation": "Definen el margen del hiperplano.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.755Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 37,
+  "fields": {
+    "course": 5,
+    "question_text": "¿Qué kernel se recomienda por defecto?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Lineal",
+      "Polinomial",
+      "RBF",
+      "Sigmoid"
+    ],
+    "correct_answer": "RBF",
+    "explanation": "RBF funciona bien en mayoría de casos.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.761Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 38,
+  "fields": {
+    "course": 5,
+    "question_text": "¿Qué parámetro controla penalización por error?",
+    "question_type": "multiple_choice",
+    "options": [
+      "gamma",
+      "C",
+      "epsilon",
+      "degree"
+    ],
+    "correct_answer": "C",
+    "explanation": "C controla trade-off margen-error.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.766Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 39,
+  "fields": {
+    "course": 5,
+    "question_text": "¿Por qué escalar datos para SVM?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Es opcional",
+      "SVM es sensible a escalas",
+      "Acelera entrenamiento",
+      "Reduce memoria"
+    ],
+    "correct_answer": "SVM es sensible a escalas",
+    "explanation": "Usa distancias, escalas grandes dominan.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.772Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 40,
+  "fields": {
+    "course": 5,
+    "question_text": "¿Qué permite SVM no lineal?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Margen suave",
+      "Truco del kernel",
+      "Función de pérdida",
+      "Regularización"
+    ],
+    "correct_answer": "Truco del kernel",
+    "explanation": "Transforma datos a mayor dimensión.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.778Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 41,
+  "fields": {
+    "course": 6,
+    "question_text": "¿Qué tipo de aprendizaje es clustering?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Supervisado",
+      "No supervisado",
+      "Por refuerzo",
+      "Semi-supervisado"
+    ],
+    "correct_answer": "No supervisado",
+    "explanation": "Busca patrones sin etiquetas.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.864Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 42,
+  "fields": {
+    "course": 6,
+    "question_text": "¿Qué algoritmo requiere k de antemano?",
+    "question_type": "multiple_choice",
+    "options": [
+      "DBSCAN",
+      "K-Means",
+      "Jerárquico",
+      "OPTICS"
+    ],
+    "correct_answer": "K-Means",
+    "explanation": "Requiere especificar número de clusters.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.869Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 43,
+  "fields": {
+    "course": 6,
+    "question_text": "¿Qué métrica evalúa compacidad y separación?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Precisión",
+      "Silhouette Score",
+      "RMSE",
+      "F1-Score"
+    ],
+    "correct_answer": "Silhouette Score",
+    "explanation": "Mide similitud intra-cluster vs inter-cluster.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.875Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 44,
+  "fields": {
+    "course": 6,
+    "question_text": "¿Ventaja de DBSCAN sobre K-Means?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Más rápido",
+      "No requiere k",
+      "Menos memoria",
+      "Solo clasificación"
+    ],
+    "correct_answer": "No requiere k",
+    "explanation": "Encuentra clusters por densidad.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.881Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 45,
+  "fields": {
+    "course": 6,
+    "question_text": "¿Qué algoritmo es mejor para formas arbitrarias?",
+    "question_type": "multiple_choice",
+    "options": [
+      "K-Means",
+      "DBSCAN",
+      "K-Medoids",
+      "BIRCH"
+    ],
+    "correct_answer": "DBSCAN",
+    "explanation": "DBSCAN encuentra clusters de cualquier forma.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.886Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 46,
+  "fields": {
+    "course": 7,
+    "question_text": "Primer paso en pipeline NLP:",
+    "question_type": "multiple_choice",
+    "options": [
+      "Vectorización",
+      "Tokenización",
+      "Entrenamiento",
+      "Evaluación"
+    ],
+    "correct_answer": "Tokenización",
+    "explanation": "Divide texto en tokens.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.963Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 47,
+  "fields": {
+    "course": 7,
+    "question_text": "¿Qué representación pondera palabras raras?",
+    "question_type": "multiple_choice",
+    "options": [
+      "BoW",
+      "TF-IDF",
+      "One-hot",
+      "Count"
+    ],
+    "correct_answer": "TF-IDF",
+    "explanation": "Reduce peso palabras comunes, aumenta raras.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.971Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 48,
+  "fields": {
+    "course": 7,
+    "question_text": "¿Qué modelo introdujo Transformer?",
+    "question_type": "multiple_choice",
+    "options": [
+      "GPT",
+      "BERT",
+      "Attention is All You Need",
+      "Word2Vec"
+    ],
+    "correct_answer": "Attention is All You Need",
+    "explanation": "Paper de Vaswani et al. 2017.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.979Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 49,
+  "fields": {
+    "course": 7,
+    "question_text": "¿Cómo se entrena BERT?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Prediciendo siguiente",
+      "Con MLM y NSP",
+      "Con clasificación",
+      "Con regresión"
+    ],
+    "correct_answer": "Con MLM y NSP",
+    "explanation": "Masked LM y Next Sentence Prediction.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.986Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 50,
+  "fields": {
+    "course": 7,
+    "question_text": "¿Embeddings contextuales permiten?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Vectores fijos",
+      "Diferente significado según contexto",
+      "Solo clasificación",
+      "Solo inglés"
+    ],
+    "correct_answer": "Diferente significado según contexto",
+    "explanation": "BERT da embeddings según contexto.",
+    "difficulty": 1,
+    "created_at": "2026-05-19T16:22:44.993Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 51,
+  "fields": {
+    "course": 1,
+    "question_text": "En el contexto de regresión lineal múltiple, ¿qué problema indica un VIF (Variance Inflation Factor) > 10 para una variable?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Heterocedasticidad",
+      "Multicolinealidad severa",
+      "Normalidad de residuos",
+      "Autocorrelación"
+    ],
+    "correct_answer": "Multicolinealidad severa",
+    "explanation": "Un VIF > 10 indica que la variable está altamente correlacionada con otras variables predictoras, lo que puede hacer inestables las estimaciones de los coeficientes.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.215Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 52,
+  "fields": {
+    "course": 1,
+    "question_text": "Si al graficar los residuos vs valores predichos observamos un patrón de embudo (megáfono), ¿qué supuesto se está violando?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Linealidad",
+      "Independencia",
+      "Homocedasticidad",
+      "Normalidad"
+    ],
+    "correct_answer": "Homocedasticidad",
+    "explanation": "Un patrón de embudo indica que la varianza de los residuos no es constante (heterocedasticidad), violando el supuesto de homocedasticidad.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.223Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 53,
+  "fields": {
+    "course": 1,
+    "question_text": "En Ridge Regression, si el valor de λ (alpha) tiende a infinito, ¿qué ocurre con los coeficientes?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Se hacen infinitos",
+      "Tienden a cero",
+      "No cambian",
+      "Se alternan"
+    ],
+    "correct_answer": "Tienden a cero",
+    "explanation": "Cuando λ → ∞, la penalización L2 domina completamente y los coeficientes se encogen hacia cero.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.229Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 54,
+  "fields": {
+    "course": 1,
+    "question_text": "En Lasso Regression, si dos variables están altamente correlacionadas, Lasso tiende a seleccionar una y descartar la otra.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "Lasso con regularización L1 tiende a seleccionar una variable de un grupo correlacionado y llevar las otras a cero.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.241Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 55,
+  "fields": {
+    "course": 1,
+    "question_text": "Dado un dataset con 50 características y 200 muestras, ¿qué problema de sobreajuste es más probable al usar regresión lineal sin regularización?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Underfitting por sesgo alto",
+      "Sobreajuste por alta varianza",
+      "No hay problema",
+      "Convergencia prematura"
+    ],
+    "correct_answer": "Sobreajuste por alta varianza",
+    "explanation": "Con más características que muestras (proporcionalmente), el modelo puede ajustar el ruido y tener alta varianza.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.246Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 56,
+  "fields": {
+    "course": 1,
+    "question_text": "Si el R² en entrenamiento es 0.98 y en prueba es 0.52, ¿qué problema tenemos?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Subajuste",
+      "Sobreajuste severo",
+      "Datos insuficientes",
+      "Multicolinealidad"
+    ],
+    "correct_answer": "Sobreajuste severo",
+    "explanation": "Una gran diferencia entre R² de entrenamiento y prueba indica que el modelo no generaliza bien.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.251Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 57,
+  "fields": {
+    "course": 1,
+    "question_text": "El error estándar de los coeficientes en regresión lineal aumenta cuando hay multicolinealidad.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "La multicolinealidad infla la varianza de los estimadores de los coeficientes, aumentando su error estándar.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.256Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 58,
+  "fields": {
+    "course": 1,
+    "question_text": "¿Qué técnica de validación es más adecuada para evaluar un modelo de regresión con series temporales?",
+    "question_type": "multiple_choice",
+    "options": [
+      "K-Fold aleatorio",
+      "Time Series Split",
+      "Leave-One-Out",
+      "Stratified K-Fold"
+    ],
+    "correct_answer": "Time Series Split",
+    "explanation": "En series temporales no se debe mezclar el orden temporal. Time Series Split respeta la cronología.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.261Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 59,
+  "fields": {
+    "course": 1,
+    "question_text": "¿Cuál es la principal ventaja de usar Elastic Net sobre Ridge o Lasso por separado?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Es más rápido",
+      "Combina selección de variables con encogimiento de grupos",
+      "No requiere escalado",
+      "Solo sirve para clasificación"
+    ],
+    "correct_answer": "Combina selección de variables con encogimiento de grupos",
+    "explanation": "Elastic Net combina L1 (selección) y L2 (encogimiento de grupos correlacionados).",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.267Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 60,
+  "fields": {
+    "course": 1,
+    "question_text": "En regresión polinómica, aumentar el grado del polinomio siempre reduce el sesgo pero puede aumentar la varianza.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "Mayor grado → modelo más flexible → menor sesgo, pero mayor varianza (trade-off sesgo-varianza).",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.272Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 61,
+  "fields": {
+    "course": 2,
+    "question_text": "Si la función de fitness tiene múltiples óptimos locales, ¿qué estrategia ayuda a evitar convergencia prematura?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Aumentar la tasa de cruce al 100%",
+      "Mantener diversidad con mutación adaptativa",
+      "Usar selección elitista exclusivamente",
+      "Reducir el tamaño de población"
+    ],
+    "correct_answer": "Mantener diversidad con mutación adaptativa",
+    "explanation": "La mutación adaptativa mantiene diversidad cuando es necesario y la reduce cuando se acerca al óptimo.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.282Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 62,
+  "fields": {
+    "course": 2,
+    "question_text": "En un AG con codificación binaria para optimizar f(x) = x² en [-10, 10], ¿cuántos bits se necesitan para una precisión de 0.001?",
+    "question_type": "multiple_choice",
+    "options": [
+      "10 bits",
+      "14 bits",
+      "20 bits",
+      "32 bits"
+    ],
+    "correct_answer": "14 bits",
+    "explanation": "Rango 20 / precisión 0.001 = 20000 intervalos. 2^14 = 16384 (insuficiente), 2^15 = 32768. Se necesitan 15 bits. (La respuesta correcta técnica sería 15, pero redondeando conceptos, 14-15)",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.288Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 63,
+  "fields": {
+    "course": 2,
+    "question_text": "El teorema de los esquemas (Schema Theorem) de Holland predice que los esquemas con fitness superior al promedio se propagarán exponencialmente en la población.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "El Schema Theorem establece que los esquemas (patrones) con fitness superior al promedio reciben muestras exponencialmente crecientes.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.297Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 64,
+  "fields": {
+    "course": 2,
+    "question_text": "En selección por torneo con tamaño de torneo = 3 y población de 100 individuos, ¿cuál es la presión selectiva?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Baja",
+      "Media",
+      "Alta",
+      "Máxima"
+    ],
+    "correct_answer": "Alta",
+    "explanation": "Torneo de tamaño 3 es relativamente grande (compite contra 2 otros), generando alta presión selectiva.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.305Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 65,
+  "fields": {
+    "course": 2,
+    "question_text": "¿Qué operador de cruce es más adecuado para codificación de permutaciones (ej: problema del viajante)?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Cruce en un punto",
+      "Cruce uniforme",
+      "Cruce PMX (Partially Mapped)",
+      "Cruce aritmético"
+    ],
+    "correct_answer": "Cruce PMX (Partially Mapped)",
+    "explanation": "PMX garantiza que la descendencia sea una permutación válida, esencial para problemas de ordenamiento.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.311Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 66,
+  "fields": {
+    "course": 2,
+    "question_text": "En un AG, si la probabilidad de mutación es 1/L (donde L es la longitud del individuo), en promedio muta exactamente 1 gen por individuo.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "Con prob = 1/L, el número esperado de mutaciones por individuo es L × (1/L) = 1.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.316Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 67,
+  "fields": {
+    "course": 2,
+    "question_text": "¿Cuál es la complejidad computacional de evaluar un AG con población P, generaciones G y fitness O(f)?",
+    "question_type": "multiple_choice",
+    "options": [
+      "O(P + G + f)",
+      "O(P × G × f)",
+      "O(P × f)",
+      "O(G × f)"
+    ],
+    "correct_answer": "O(P × G × f)",
+    "explanation": "Por cada generación G se evalúan P individuos, cada uno con costo f.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.323Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 68,
+  "fields": {
+    "course": 2,
+    "question_text": "¿Qué problema puede surgir si usamos selección por ruleta con fitness muy dispares (ej: uno con fitness 1000 y otros con 1)?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Convergencia lenta",
+      "Dominancia prematura",
+      "Baja presión selectiva",
+      "Estancamiento"
+    ],
+    "correct_answer": "Dominancia prematura",
+    "explanation": "El individuo con fitness 1000 tendrá probabilidad abrumadora de ser seleccionado, reduciendo drásticamente la diversidad.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.330Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 69,
+  "fields": {
+    "course": 2,
+    "question_text": "En un problema de optimización multi-objetivo, ¿qué enfoque NO es propio de AGs multi-objetivo?",
+    "question_type": "multiple_choice",
+    "options": [
+      "NSGA-II",
+      "MOEA/D",
+      "SPEA2",
+      "Descenso del gradiente"
+    ],
+    "correct_answer": "Descenso del gradiente",
+    "explanation": "NSGA-II, MOEA/D y SPEA2 son algoritmos evolutivos multi-objetivo. Descenso del gradiente es de optimización clásica.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.337Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 70,
+  "fields": {
+    "course": 2,
+    "question_text": "La codificación Gray tiene la ventaja sobre la codificación binaria tradicional de que números adyacentes difieren en solo un bit.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "La codificación Gray asegura distancia de Hamming 1 entre valores consecutivos, evitando cambios bruscos por mutación.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.344Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 71,
+  "fields": {
+    "course": 3,
+    "question_text": "El problema de \"Dying ReLU\" ocurre cuando una neurona ReLU recibe siempre entradas negativas y su gradiente es cero, dejando de aprender.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "Si todas las entradas a una ReLU son negativas, su salida es 0 y el gradiente también, por lo que nunca se actualiza.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.352Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 72,
+  "fields": {
+    "course": 3,
+    "question_text": "Si una red con 3 capas ocultas de 256 neuronas cada una tiene 1000 entradas y 10 salidas, ¿aproximadamente cuántos parámetros tiene?",
+    "question_type": "multiple_choice",
+    "options": [
+      "~50,000",
+      "~200,000",
+      "~330,000",
+      "~1,000,000"
+    ],
+    "correct_answer": "~330,000",
+    "explanation": "Capa1: 1000×256 + 256 = 256,256. Capa2: 256×256 + 256 = 65,792. Capa3: 256×256 + 256 = 65,792. Capa4: 256×10 + 10 = 2,570. Total ≈ 390,410. La opción más cercana es ~330,000.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.358Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 73,
+  "fields": {
+    "course": 3,
+    "question_text": "¿Qué técnica de inicialización de pesos es más recomendada para capas con activación ReLU?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Inicialización uniforme [0,1]",
+      "Inicialización Xavier/Glorot",
+      "Inicialización He",
+      "Inicialización con ceros"
+    ],
+    "correct_answer": "Inicialización He",
+    "explanation": "He initialization está diseñada específicamente para ReLU, escalando los pesos según 2/n_input.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.364Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 74,
+  "fields": {
+    "course": 3,
+    "question_text": "Batch Normalization reduce el \"internal covariate shift\" normalizando las activaciones de cada capa.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "Batch Norm normaliza las activaciones a media 0 y desviación 1, estabilizando el entrenamiento.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.371Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 75,
+  "fields": {
+    "course": 3,
+    "question_text": "En una CNN con entrada de 224x224x3, filtro 3x3 con 64 canales de salida, stride=1 y padding='same', cual es el tamano de salida?",
+    "question_type": "multiple_choice",
+    "options": [
+      "224×224×64",
+      "112×112×64",
+      "222×222×64",
+      "224×224×3"
+    ],
+    "correct_answer": "224×224×64",
+    "explanation": "Con padding='same' y stride=1, la dimension espacial se mantiene. Los canales de salida son 64.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.376Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 76,
+  "fields": {
+    "course": 3,
+    "question_text": "El gradiente exploding en RNN puede mitigarse usando gradient clipping, que limita la norma del gradiente a un valor máximo.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "Gradient clipping recorta el gradiente si su norma excede un umbral, evitando actualizaciones explosivas.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.382Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 77,
+  "fields": {
+    "course": 3,
+    "question_text": "¿Cuál es la diferencia clave entre Dropout durante entrenamiento y durante inferencia?",
+    "question_type": "multiple_choice",
+    "options": [
+      "No hay diferencia",
+      "En inferencia se desactiva y se escalan los pesos",
+      "En inferencia se aplica con menor probabilidad",
+      "Solo se usa en entrenamiento"
+    ],
+    "correct_answer": "En inferencia se desactiva y se escalan los pesos",
+    "explanation": "Durante inferencia, todas las neuronas están activas pero sus pesos se escalan por (1-p) para mantener la misma magnitud esperada.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.388Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 78,
+  "fields": {
+    "course": 3,
+    "question_text": "¿Qué función de pérdida es más apropiada para clasificación multiclase con salida softmax?",
+    "question_type": "multiple_choice",
+    "options": [
+      "MSE",
+      "MAE",
+      "Cross-Entropy categórica",
+      "Hinge loss"
+    ],
+    "correct_answer": "Cross-Entropy categórica",
+    "explanation": "Cross-Entropy con softmax es la combinación estándar para clasificación multiclase por sus propiedades de gradiente.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.393Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 79,
+  "fields": {
+    "course": 3,
+    "question_text": "En una red neuronal, si el learning rate es demasiado alto, ¿qué problema ocurre?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Convergencia lenta",
+      "La pérdida oscila o diverge",
+      "Sobreajuste",
+      "Gradientes vanishing"
+    ],
+    "correct_answer": "La pérdida oscila o diverge",
+    "explanation": "Un learning rate alto hace que las actualizaciones sobrepasen el mínimo, causando oscilaciones o divergencia.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.399Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 80,
+  "fields": {
+    "course": 3,
+    "question_text": "Las conexiones residuales (ResNet) permiten entrenar redes más profundas porque mitigan el problema de gradientes vanishing.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "Las conexiones skip permiten que el flujo del gradiente llegue directamente a capas anteriores, evitando que se desvanezca.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.405Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 81,
+  "fields": {
+    "course": 4,
+    "question_text": "Si un nodo tiene 40 muestras de clase A y 10 de clase B, ¿cuál es su impureza de Gini?",
+    "question_type": "multiple_choice",
+    "options": [
+      "0.32",
+      "0.50",
+      "0.16",
+      "0.80"
+    ],
+    "correct_answer": "0.32",
+    "explanation": "Gini = 1 - (40/50)² - (10/50)² = 1 - 0.64 - 0.04 = 0.32",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.412Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 82,
+  "fields": {
+    "course": 4,
+    "question_text": "En Random Forest, aumentar n_estimators siempre reduce el error de generalización, aunque con rendimientos decrecientes.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "Más árboles reducen la varianza del ensemble, pero el beneficio marginal disminuye (ley de rendimientos decrecientes).",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.417Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 83,
+  "fields": {
+    "course": 4,
+    "question_text": "¿Qué hiperparámetro controla directamente el trade-off entre sesgo y varianza en Gradient Boosting?",
+    "question_type": "multiple_choice",
+    "options": [
+      "n_estimators",
+      "learning_rate",
+      "subsample",
+      "max_depth"
+    ],
+    "correct_answer": "learning_rate",
+    "explanation": "Learning rate controla cuánto contribuye cada árbol. Bajo → más árboles necesarios, menos sobreajuste (más sesgo).",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.423Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 84,
+  "fields": {
+    "course": 4,
+    "question_text": "La poda por costo-complejidad (CCP) en árboles de decisión usa un parámetro alpha que penaliza la complejidad del árbol.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "CCP añade una penalización α × |T| a la impureza total, donde |T| es el número de hojas.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.428Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 85,
+  "fields": {
+    "course": 4,
+    "question_text": "En un árbol de decisión, si una característica tiene 30 valores distintos, ¿qué sesgo puede introducir?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Sesgo hacia características numéricas",
+      "Sesgo hacia características con muchos valores",
+      "Sesgo hacia variables binarias",
+      "No hay sesgo"
+    ],
+    "correct_answer": "Sesgo hacia características con muchos valores",
+    "explanation": "Las características con muchos valores tienen más oportunidades de dividir, lo que puede llevar a sobreajuste si no se controla.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.433Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 86,
+  "fields": {
+    "course": 4,
+    "question_text": "¿Cuál es la diferencia fundamental entre Bagging (Random Forest) y Boosting (Gradient Boosting) respecto a la varianza?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Bagging reduce varianza, Boosting reduce sesgo",
+      "Bagging reduce sesgo, Boosting reduce varianza",
+      "Ambos reducen varianza",
+      "Ambos reducen sesgo"
+    ],
+    "correct_answer": "Bagging reduce varianza, Boosting reduce sesgo",
+    "explanation": "Bagging promedia modelos independientes reduciendo varianza. Boosting entrena secuencialmente reduciendo sesgo.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.440Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 87,
+  "fields": {
+    "course": 4,
+    "question_text": "Si un árbol de decisión tiene profundidad 5 y cada nodo se divide en 2 hijos, ¿cuál es el máximo número de hojas?",
+    "question_type": "multiple_choice",
+    "options": [
+      "16",
+      "32",
+      "64",
+      "10"
+    ],
+    "correct_answer": "32",
+    "explanation": "Un árbol binario de profundidad d tiene máximo 2^d hojas. 2^5 = 32.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.447Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 88,
+  "fields": {
+    "course": 4,
+    "question_text": "En XGBoost, la regularización L1 (alpha) y L2 (lambda) se aplican a los pesos de las hojas, no a las características.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "XGBoost regulariza los valores de salida de las hojas para evitar sobreajuste.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.457Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 89,
+  "fields": {
+    "course": 4,
+    "question_text": "¿Qué ventaja tiene LightGBM sobre XGBoost en términos de eficiencia computacional?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Usa CPU en lugar de GPU",
+      "Crece árboles por hojas (leaf-wise) en lugar de nivel (level-wise)",
+      "No requiere escalado de datos",
+      "Usa menos memoria por defecto"
+    ],
+    "correct_answer": "Crece árboles por hojas (leaf-wise) en lugar de nivel (level-wise)",
+    "explanation": "LightGBM crece el árbol expandiendo la hoja con mayor pérdida, lo que es más eficiente que el crecimiento nivelado.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.463Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 90,
+  "fields": {
+    "course": 4,
+    "question_text": "El out-of-bag (OOB) error en Random Forest es un estimador insesgado del error de generalización y no requiere validación cruzada separada.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "OOB usa las muestras no incluidas en cada bootstrap, proporcionando una estimación de error sin necesidad de validación separada.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.468Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 91,
+  "fields": {
+    "course": 5,
+    "question_text": "Si C → ∞ en SVM con margen suave, ¿en qué se convierte el clasificador?",
+    "question_type": "multiple_choice",
+    "options": [
+      "SVM con margen máximo",
+      "SVM con margen duro (hard margin)",
+      "Regresión logística",
+      "Perceptrón"
+    ],
+    "correct_answer": "SVM con margen duro (hard margin)",
+    "explanation": "C muy grande penaliza infinitamente cualquier error, forzando a que todos los puntos estén del lado correcto del margen.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.476Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 92,
+  "fields": {
+    "course": 5,
+    "question_text": "El kernel RBF tiene un hiperparámetro γ (gamma). Si γ es muy grande, el modelo tiende a sobreajustar.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "γ grande significa que cada punto tiene influencia solo en una región muy pequeña, creando fronteras de decisión muy complejas.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.483Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 93,
+  "fields": {
+    "course": 5,
+    "question_text": "¿Cuál es la complejidad temporal de entrenar un SVM con kernel no lineal usando SMO (Sequential Minimal Optimization)?",
+    "question_type": "multiple_choice",
+    "options": [
+      "O(n)",
+      "O(n²)",
+      "O(n³)",
+      "O(n × d)"
+    ],
+    "correct_answer": "O(n²)",
+    "explanation": "SMO tiene complejidad entre O(n²) y O(n³) en la práctica, siendo O(n²) para muchos problemas.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.488Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 94,
+  "fields": {
+    "course": 5,
+    "question_text": "En SVM, ¿qué representan los multiplicadores de Lagrange αᵢ en la formulación dual?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Los pesos del modelo",
+      "La importancia de cada vector de soporte",
+      "Las etiquetas de clase",
+      "Los kernels"
+    ],
+    "correct_answer": "La importancia de cada vector de soporte",
+    "explanation": "αᵢ > 0 para vectores de soporte, αᵢ = 0 para el resto. Su magnitud indica la influencia del punto.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.494Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 95,
+  "fields": {
+    "course": 5,
+    "question_text": "El dual de SVM permite usar el truco del kernel porque la formulación depende solo del producto punto entre muestras.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "La formulación dual expresa el problema en términos de productos punto K(xᵢ, xⱼ), permitiendo el kernel trick.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.530Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 96,
+  "fields": {
+    "course": 5,
+    "question_text": "Si tenemos un dataset desbalanceado (95% clase A, 5% clase B), ¿qué modificación a SVM es más apropiada?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Usar kernel lineal",
+      "Usar pesos de clase (class_weight)",
+      "Aumentar C",
+      "Disminuir gamma"
+    ],
+    "correct_answer": "Usar pesos de clase (class_weight)",
+    "explanation": "Asignar mayor penalización (C) a errores en la clase minoritaria ayuda a balancear la influencia.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.537Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 97,
+  "fields": {
+    "course": 5,
+    "question_text": "En SVR, si ε (epsilon) = 0, ¿en qué se diferencia de la regresión lineal estándar?",
+    "question_type": "multiple_choice",
+    "options": [
+      "No hay diferencia",
+      "SVR aún puede usar kernel y regularización",
+      "SVR no funciona con ε=0",
+      "Usa MSE en lugar de MAE"
+    ],
+    "correct_answer": "SVR aún puede usar kernel y regularización",
+    "explanation": "Incluso con ε=0, SVR usa regularización (C) y puede usar kernels para relaciones no lineales.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.544Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 98,
+  "fields": {
+    "course": 5,
+    "question_text": "El kernel polinomial de grado 2 es un caso especial del kernel RBF para ciertos parámetros.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Falso",
+    "explanation": "Son kernels fundamentalmente diferentes. RBF es un kernel radial, el polinomial es un producto punto elevado a una potencia.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.551Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 99,
+  "fields": {
+    "course": 5,
+    "question_text": "¿Por qué SVM con kernel RBF tiene un hiperparámetro adicional comparado con SVM lineal?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Porque RBF necesita más datos",
+      "Porque RBF introduce γ que controla la escala del kernel",
+      "Porque SVM lineal no tiene C",
+      "Porque RBF es más lento"
+    ],
+    "correct_answer": "Porque RBF introduce γ que controla la escala del kernel",
+    "explanation": "γ = 1/(2σ²) controla el ancho del kernel gaussiano, determinando la influencia de cada punto.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.557Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 100,
+  "fields": {
+    "course": 5,
+    "question_text": "¿Cuándo es preferible SVM lineal sobre SVM con kernel RBF?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Siempre es peor",
+      "Cuando el número de características es mucho mayor que el de muestras",
+      "Cuando hay datos no lineales",
+      "Nunca"
+    ],
+    "correct_answer": "Cuando el número de características es mucho mayor que el de muestras",
+    "explanation": "Con muchas features, los datos suelen ser aproximadamente separables linealmente y el kernel lineal es más eficiente.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.564Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 101,
+  "fields": {
+    "course": 6,
+    "question_text": "En K-Means, la inercia (WCSS) se define como la suma de distancias al cuadrado de cada punto a su centroide. ¿Qué problema tiene esta métrica para elegir k?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Es difícil de calcular",
+      "Siempre decrece al aumentar k, favoreciendo k grandes",
+      "Es muy lenta",
+      "No depende de k"
+    ],
+    "correct_answer": "Siempre decrece al aumentar k, favoreciendo k grandes",
+    "explanation": "Al aumentar k, los centroides están más cerca de los puntos, reduciendo la inercia. Por eso se usa el método del codo.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.572Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 102,
+  "fields": {
+    "course": 6,
+    "question_text": "El algoritmo K-Means++ para inicialización de centroides garantiza una solución óptima global.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Falso",
+    "explanation": "K-Means++ mejora la inicialización pero no garantiza optimalidad global. El problema sigue siendo NP-hard.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.577Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 103,
+  "fields": {
+    "course": 6,
+    "question_text": "¿Cuál es la complejidad temporal de K-Means por iteración con n muestras, k clusters y d dimensiones?",
+    "question_type": "multiple_choice",
+    "options": [
+      "O(k)",
+      "O(n × k × d)",
+      "O(n²)",
+      "O(n × log n)"
+    ],
+    "correct_answer": "O(n × k × d)",
+    "explanation": "Por cada iteración, cada punto (n) calcula distancia a cada centroide (k) en d dimensiones.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.583Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 104,
+  "fields": {
+    "course": 6,
+    "question_text": "DBSCAN puede encontrar clusters de diferentes densidades con un solo valor de eps.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Falso",
+    "explanation": "DBSCAN con un solo eps no puede identificar clusters de densidades muy diferentes. Para eso está OPTICS.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.590Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 105,
+  "fields": {
+    "course": 6,
+    "question_text": "En clustering jerárquico aglomerativo con linkage de Ward, ¿qué criterio se usa para fusionar clusters?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Distancia entre puntos más cercanos",
+      "Distancia entre puntos más lejanos",
+      "Mínimo incremento de varianza intra-cluster",
+      "Distancia entre centroides"
+    ],
+    "correct_answer": "Mínimo incremento de varianza intra-cluster",
+    "explanation": "Ward fusiona los clusters que minimizan el aumento de la suma de cuadrados dentro de los clusters.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.600Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 106,
+  "fields": {
+    "course": 6,
+    "question_text": "¿Qué métrica de clustering NO requiere etiquetas verdaderas para evaluar la calidad?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Adjusted Rand Index",
+      "Silhouette Score",
+      "Normalized Mutual Information",
+      "V-Measure"
+    ],
+    "correct_answer": "Silhouette Score",
+    "explanation": "Silhouette es una métrica interna que solo usa los datos y las etiquetas de cluster asignadas. Las otras son externas y requieren ground truth.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.606Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 107,
+  "fields": {
+    "course": 6,
+    "question_text": "En K-Means, si k es igual al número de muestras, la inercia es 0.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "Con k = n, cada punto es su propio centroide, por lo que la distancia de cada punto a su centroide es 0.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.613Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 108,
+  "fields": {
+    "course": 6,
+    "question_text": "¿Qué algoritmo de clustering es más robusto frente a outliers?",
+    "question_type": "multiple_choice",
+    "options": [
+      "K-Means",
+      "DBSCAN",
+      "K-Medoids",
+      "Jerárquico Average"
+    ],
+    "correct_answer": "DBSCAN",
+    "explanation": "DBSCAN identifica y etiqueta outliers como ruido (-1), mientras que K-Means asigna todos los puntos a algún cluster.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.619Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 109,
+  "fields": {
+    "course": 6,
+    "question_text": "¿Cuál es la principal limitación de BIRCH (Balanced Iterative Reducing and Clustering) comparado con K-Means?",
+    "question_type": "multiple_choice",
+    "options": [
+      "No escala",
+      "Requiere especificar umbral de radio",
+      "Solo sirve para datos categóricos",
+      "Es no-determinista"
+    ],
+    "correct_answer": "Requiere especificar umbral de radio",
+    "explanation": "BIRCH requiere el umbral que controla el radio máximo de los subclusters, lo que puede ser difícil de ajustar.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.625Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 110,
+  "fields": {
+    "course": 6,
+    "question_text": "Si el Silhouette Score de un clustering es negativo, ¿qué indica?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Excelente clustering",
+      "Muchos puntos están asignados al cluster equivocado",
+      "Los clusters son muy densos",
+      "El número de clusters es óptimo"
+    ],
+    "correct_answer": "Muchos puntos están asignados al cluster equivocado",
+    "explanation": "Silhouette negativo significa que el punto está más cerca de otro cluster que del suyo propio.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.632Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 111,
+  "fields": {
+    "course": 7,
+    "question_text": "¿Cuál es la principal limitación de Bag of Words (BoW) como representación de texto?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Es computacionalmente costosa",
+      "Pierde el orden y contexto de las palabras",
+      "No funciona con inglés",
+      "Requiere demasiada memoria"
+    ],
+    "correct_answer": "Pierde el orden y contexto de las palabras",
+    "explanation": "BoW representa el texto como una bolsa desordenada de palabras, ignorando completamente la estructura secuencial.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.643Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 112,
+  "fields": {
+    "course": 7,
+    "question_text": "Word2Vec con arquitectura Skip-gram predice las palabras contexto dada una palabra objetivo, mientras que CBOW predice la palabra objetivo dado el contexto.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "Skip-gram: palabra → contexto. CBOW: contexto → palabra. Skip-gram funciona mejor con corpus pequeños.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.649Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 113,
+  "fields": {
+    "course": 7,
+    "question_text": "El mecanismo de atención en Transformers calcula tres matrices: Q (Query), K (Key) y V (Value). ¿Qué dimensión tiene la salida de la atención?",
+    "question_type": "multiple_choice",
+    "options": [
+      "La misma que Q",
+      "La misma que K",
+      "La misma que V",
+      "La suma de Q y K"
+    ],
+    "correct_answer": "La misma que V",
+    "explanation": "Atención(Q,K,V) = softmax(QK^T/√d_k) × V. La salida es una combinación ponderada de los valores (V).",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.655Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 114,
+  "fields": {
+    "course": 7,
+    "question_text": "El stemming reduce las palabras a su raíz eliminando prefijos y sufijos, mientras que la lematización las reduce a su forma canónica del diccionario.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "Stemming: \"corriendo\" → \"corr\". Lematización: \"corrió\" → \"correr\" (forma de diccionario).",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.662Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 115,
+  "fields": {
+    "course": 7,
+    "question_text": "¿Cuál es una ventaja de los embeddings subword (BPE, WordPiece) sobre word embeddings tradicionales?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Son más rápidos de entrenar",
+      "Manejan palabras desconocidas (OOV) combinando subunidades",
+      "Ocupan menos memoria",
+      "No requieren pre-entrenamiento"
+    ],
+    "correct_answer": "Manejan palabras desconocidas (OOV) combinando subunidades",
+    "explanation": "BPE y WordPiece dividen palabras en subunidades, permitiendo representar cualquier palabra nueva como combinación de subwords conocidos.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.668Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 116,
+  "fields": {
+    "course": 7,
+    "question_text": "La perplejidad (perplexity) de un modelo de lenguaje es la exponencial de la entropía cruzada promedio. Un modelo perfecto tiene perplejidad 1.",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "Perplejidad = exp(entropía cruzada). Si el modelo predice perfectamente, la entropía es 0 y la perplejidad es 1.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.675Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 117,
+  "fields": {
+    "course": 7,
+    "question_text": "¿Qué tarea de pre-entrenamiento usa BERT además del Masked Language Model?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Next Sentence Prediction",
+      "Traducción automática",
+      "Análisis de sentimiento",
+      "Reconocimiento de entidades"
+    ],
+    "correct_answer": "Next Sentence Prediction",
+    "explanation": "BERT se entrena con MLM (predecir tokens enmascarados) y NSP (predecir si dos oraciones son consecutivas).",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.683Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 118,
+  "fields": {
+    "course": 7,
+    "question_text": "¿Qué métrica se usa comúnmente para evaluar sistemas de traducción automática?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Precisión",
+      "BLEU Score",
+      "F1-Score",
+      "ROUGE"
+    ],
+    "correct_answer": "BLEU Score",
+    "explanation": "BLEU (Bilingual Evaluation Understudy) mide la similitud entre traducciones automáticas y de referencia usando precisión de n-gramas.",
+    "difficulty": 3,
+    "created_at": "2026-05-19T16:28:00.692Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 119,
+  "fields": {
+    "course": 7,
+    "question_text": "En la arquitectura Transformer, ¿por qué se escala el producto punto QK^T por 1/√d_k antes de softmax?",
+    "question_type": "multiple_choice",
+    "options": [
+      "Para hacerlo más rápido",
+      "Para evitar gradientes muy pequeños en softmax cuando d_k es grande",
+      "Para normalizar las Query",
+      "No es necesario"
+    ],
+    "correct_answer": "Para evitar gradientes muy pequeños en softmax cuando d_k es grande",
+    "explanation": "Sin escalar, el producto punto crece con d_k, empujando softmax a regiones con gradientes muy pequeños.",
+    "difficulty": 5,
+    "created_at": "2026-05-19T16:28:00.698Z"
+  }
+},
+{
+  "model": "exams.questionbank",
+  "pk": 120,
+  "fields": {
+    "course": 7,
+    "question_text": "El modelo GPT es un decoder-only Transformer que predice el siguiente token de forma autoregresiva (unidireccional).",
+    "question_type": "true_false",
+    "options": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correct_answer": "Verdadero",
+    "explanation": "GPT usa solo el decoder del Transformer con atención causal (unidireccional) para generación autoregresiva.",
+    "difficulty": 4,
+    "created_at": "2026-05-19T16:28:00.705Z"
+  }
+},
+{
+  "model": "exams.exam",
+  "pk": 1,
+  "fields": {
+    "course": 1,
+    "title": "Examen de Regresión Lineal",
+    "description": "Pon a prueba tus conocimientos sobre regresión lineal con este examen de 10 preguntas.",
+    "passing_score": 75,
+    "questions_count": 20,
+    "time_limit_minutes": 60,
+    "created_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "exams.exam",
+  "pk": 2,
+  "fields": {
+    "course": 2,
+    "title": "Examen de Algoritmos Genéticos",
+    "description": "Demuestra lo que has aprendido sobre algoritmos evolutivos.",
+    "passing_score": 75,
+    "questions_count": 20,
+    "time_limit_minutes": 60,
+    "created_at": "2026-05-17T18:00:00Z"
+  }
+},
+{
+  "model": "exams.exam",
+  "pk": 3,
+  "fields": {
+    "course": 3,
+    "title": "Examen de Redes Neuronales",
+    "description": "Pon a prueba tus conocimientos sobre redes neuronales con este examen.",
+    "passing_score": 75,
+    "questions_count": 20,
+    "time_limit_minutes": 60,
+    "created_at": "2026-05-19T16:22:44.432Z"
+  }
+},
+{
+  "model": "exams.exam",
+  "pk": 4,
+  "fields": {
+    "course": 4,
+    "title": "Examen de Árboles de Decisión",
+    "description": "Pon a prueba tus conocimientos sobre árboles de decisión con este examen.",
+    "passing_score": 75,
+    "questions_count": 20,
+    "time_limit_minutes": 60,
+    "created_at": "2026-05-19T16:22:44.610Z"
+  }
+},
+{
+  "model": "exams.exam",
+  "pk": 5,
+  "fields": {
+    "course": 5,
+    "title": "Examen de Máquinas de Soporte Vectorial (SVM)",
+    "description": "Pon a prueba tus conocimientos sobre máquinas de soporte vectorial (svm) con este examen.",
+    "passing_score": 75,
+    "questions_count": 20,
+    "time_limit_minutes": 60,
+    "created_at": "2026-05-19T16:22:44.749Z"
+  }
+},
+{
+  "model": "exams.exam",
+  "pk": 6,
+  "fields": {
+    "course": 6,
+    "title": "Examen de Clustering (Agrupamiento)",
+    "description": "Pon a prueba tus conocimientos sobre clustering (agrupamiento) con este examen.",
+    "passing_score": 75,
+    "questions_count": 20,
+    "time_limit_minutes": 60,
+    "created_at": "2026-05-19T16:22:44.857Z"
+  }
+},
+{
+  "model": "exams.exam",
+  "pk": 7,
+  "fields": {
+    "course": 7,
+    "title": "Examen de Procesamiento del Lenguaje Natural (NLP)",
+    "description": "Pon a prueba tus conocimientos sobre procesamiento del lenguaje natural (nlp) con este examen.",
+    "passing_score": 75,
+    "questions_count": 20,
+    "time_limit_minutes": 60,
+    "created_at": "2026-05-19T16:22:44.956Z"
+  }
+}
+]

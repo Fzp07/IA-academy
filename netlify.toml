@@ -1,0 +1,17 @@
+[build]
+  command = "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+  functions = "netlify/functions"
+  publish = "staticfiles"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/wsgi_handler"
+  status = 200
+
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

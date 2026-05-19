@@ -1,0 +1,1 @@
+Que me pida mas datos como nombres, apellidos, edad, numero de teléfono, genero, tipo de documento y numero de documento

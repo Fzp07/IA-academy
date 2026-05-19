@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Algoritmo Genético - AI Academy{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card ai-scan">
+                <div class="card-header">
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="ai-pulse-ring" style="width:24px;height:24px;">
+                            <i class="fas fa-dna ai-brain-glow"></i>
+                        </span>
+                        <h4 class="mb-0">Demo de Algoritmo Genético</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>🧬 Configura los parámetros y ejecuta el algoritmo genético para optimizar una función.</p>
+
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="function" class="form-label"><i class="fas fa-cogs me-1"></i>Función a optimizar</label>
+                                <select class="form-select" id="function" name="function">
+                                    <option value="f1">f(x) = x²</option>
+                                    <option value="f2">f(x) = -(x-2)² + 5</option>
+                                    <option value="knapsack">Problema de la Mochila</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="population_size" class="form-label"><i class="fas fa-users me-1"></i>Tamaño de población</label>
+                                <input type="number" class="form-control" id="population_size" name="population_size" value="50" min="10" max="500">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="generations" class="form-label"><i class="fas fa-sync me-1"></i>Generaciones</label>
+                                <input type="number" class="form-control" id="generations" name="generations" value="100" min="10" max="1000">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="selection_type" class="form-label"><i class="fas fa-filter me-1"></i>Tipo de selección</label>
+                                <select class="form-select" id="selection_type" name="selection_type">
+                                    <option value="tournament">Torneo</option>
+                                    <option value="roulette">Ruleta</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="crossover_prob" class="form-label"><i class="fas fa-code-branch me-1"></i>Probabilidad de cruce</label>
+                                <input type="number" class="form-control" id="crossover_prob" name="crossover_prob" value="0.7" step="0.05" min="0" max="1">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="mutation_prob" class="form-label"><i class="fas fa-flask me-1"></i>Probabilidad de mutación</label>
+                                <input type="number" class="form-control" id="mutation_prob" name="mutation_prob" value="0.2" step="0.05" min="0" max="1">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 btn-ai-processing">
+                            <i class="fas fa-play"></i> Ejecutar Algoritmo Genético
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

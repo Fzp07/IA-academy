@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Iniciar Sesión - AI Academy{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="card ai-scan">
+                <div class="card-header text-center">
+                    <div class="ai-pulse-ring d-inline-flex mb-2" style="width:40px;height:40px;">
+                        <i class="fas fa-robot fa-2x ai-brain-glow"></i>
+                    </div>
+                    <h4 class="mt-2">Iniciar Sesión</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        {% if form.errors %}
+                        <div class="alert alert-danger">
+                            <i class="fas fa-exclamation-triangle"></i> Usuario o contraseña incorrectos.
+                        </div>
+                        {% endif %}
+                        <div class="mb-3">
+                            <label for="id_username" class="form-label"><i class="fas fa-user me-1"></i>Usuario</label>
+                            <input type="text" name="username" class="form-control" id="id_username" placeholder="Ingresa tu usuario" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="id_password" class="form-label"><i class="fas fa-lock me-1"></i>Contraseña</label>
+                            <input type="password" name="password" class="form-control" id="id_password" placeholder="Ingresa tu contraseña" required>
+                        </div>
+                        <div class="mb-3 text-end">
+                            <a href="{% url 'users:password_reset_request' %}" class="text-decoration-none">
+                                <i class="fas fa-question-circle"></i> ¿Olvidaste tu contraseña?
+                            </a>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 btn-ai-processing">
+                            <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                        </button>
+                    </form>
+                    <hr>
+                    <p class="text-center mb-0">
+                        ¿No tienes cuenta? <a href="{% url 'users:register' %}">Regístrate</a>
+                        <span class="ai-thinking-dots ms-2">
+                            <span></span><span></span><span></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Registro - AI Academy{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card ai-scan">
+                <div class="card-header text-center">
+                    <div class="ai-pulse-ring d-inline-flex mb-2" style="width:36px;height:36px;">
+                        <i class="fas fa-user-plus ai-brain-glow fa-lg"></i>
+                    </div>
+                    <h4 class="mt-2">Crear Cuenta</h4>
+                    <p class="text-muted small mb-0">Únete a la revolución de la IA</p>
+                </div>
+                <div class="card-body">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% if form.errors %}
+                        <div class="alert alert-danger">
+                            <i class="fas fa-exclamation-triangle"></i> Corrige los errores del formulario.
+                        </div>
+                        {% endif %}
+
+                        <div class="row justify-content-center mb-3">
+                            <div class="col-md-6 text-center">
+                                <label for="{{ form.username.id_for_label }}" class="form-label"><i class="fas fa-user me-1"></i>{{ form.username.label }}</label>
+                                {{ form.username }}
+                                {% for error in form.username.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="{{ form.first_name.id_for_label }}" class="form-label"><i class="fas fa-tag me-1"></i>{{ form.first_name.label }}</label>
+                                {{ form.first_name }}
+                                {% for error in form.first_name.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="{{ form.last_name.id_for_label }}" class="form-label"><i class="fas fa-tag me-1"></i>{{ form.last_name.label }}</label>
+                                {{ form.last_name }}
+                                {% for error in form.last_name.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="{{ form.email.id_for_label }}" class="form-label"><i class="fas fa-envelope me-1"></i>{{ form.email.label }}</label>
+                                {{ form.email }}
+                                {% for error in form.email.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="{{ form.edad.id_for_label }}" class="form-label"><i class="fas fa-cake-candles me-1"></i>{{ form.edad.label }}</label>
+                                {{ form.edad }}
+                                {% for error in form.edad.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="{{ form.telefono.id_for_label }}" class="form-label"><i class="fas fa-phone me-1"></i>{{ form.telefono.label }}</label>
+                                {{ form.telefono }}
+                                {% for error in form.telefono.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="{{ form.genero.id_for_label }}" class="form-label"><i class="fas fa-venus-mars me-1"></i>{{ form.genero.label }}</label>
+                                {{ form.genero }}
+                                {% for error in form.genero.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="{{ form.tipo_documento.id_for_label }}" class="form-label"><i class="fas fa-id-card me-1"></i>{{ form.tipo_documento.label }}</label>
+                                {{ form.tipo_documento }}
+                                {% for error in form.tipo_documento.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="{{ form.numero_documento.id_for_label }}" class="form-label"><i class="fas fa-hashtag me-1"></i>{{ form.numero_documento.label }}</label>
+                                {{ form.numero_documento }}
+                                {% for error in form.numero_documento.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center mb-3">
+                            <div class="col-md-6 text-center">
+                                <label for="{{ form.avatar.id_for_label }}" class="form-label"><i class="fas fa-camera me-1"></i>Foto de perfil</label>
+                                {{ form.avatar }}
+                                <div class="form-text" style="color: var(--text-secondary); font-size: 0.75rem;">Formatos: .png, .jpg</div>
+                                {% for error in form.avatar.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="{{ form.password1.id_for_label }}" class="form-label"><i class="fas fa-lock me-1"></i>{{ form.password1.label }}</label>
+                                {{ form.password1 }}
+                                {% if form.password1.help_text %}
+                                <div class="form-text" style="color: var(--text-secondary); font-size: 0.75rem;">{{ form.password1.help_text }}</div>
+                                {% endif %}
+                                {% for error in form.password1.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="{{ form.password2.id_for_label }}" class="form-label"><i class="fas fa-lock me-1"></i>{{ form.password2.label }}</label>
+                                {{ form.password2 }}
+                                {% for error in form.password2.errors %}
+                                <div class="text-danger small">{{ error }}</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 btn-ai-processing">
+                            <i class="fas fa-user-plus"></i> Registrarse
+                        </button>
+                    </form>
+                    <hr>
+                    <p class="text-center mb-0">
+                        ¿Ya tienes cuenta? <a href="{% url 'users:login' %}">Inicia sesión</a>
+                        <span class="ai-thinking-dots ms-2">
+                            <span></span><span></span><span></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+        .container { max-width: 600px; margin: 20px auto; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #6C3CE1, #00D4FF); padding: 30px; text-align: center; }
+        .header h1 { color: #fff; margin: 0; font-size: 24px; }
+        .body { padding: 30px; color: #333; }
+        .body p { line-height: 1.6; margin: 0 0 15px; }
+        .btn { display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #6C3CE1, #8B5CF6); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; }
+        .footer { text-align: center; padding: 20px; color: #999; font-size: 12px; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>¡Cuenta Aprobada!</h1>
+        </div>
+        <div class="body">
+            <p>Hola <strong>{{ user.first_name|default:user.username }}</strong>,</p>
+            <p>Tu cuenta en <strong>AI Academy</strong> ha sido <strong>aprobada</strong> exitosamente por nuestro equipo.</p>
+            <p>Ya puedes iniciar sesión y acceder a todos nuestros cursos y herramientas interactivas de Ciencia de Datos e Inteligencia Artificial.</p>
+            <p style="text-align: center; margin: 25px 0;">
+                <a href="{{ login_url }}" class="btn">Iniciar Sesión</a>
+            </p>
+            <p>¡Bienvenido a la comunidad!</p>
+            <p>— Equipo AI Academy</p>
+        </div>
+        <div class="footer">
+            <p>AI Academy — Aprendizaje Inteligente</p>
+        </div>
+    </div>
+</body>
+</html>

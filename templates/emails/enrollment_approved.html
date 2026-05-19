@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<style>
+body { font-family: Arial, sans-serif; background: #0A0A1A; color: #E2E8F0; padding: 20px; }
+.container { max-width: 500px; margin: 0 auto; background: rgba(255,255,255,0.05); border-radius: 16px; padding: 30px; border: 1px solid rgba(255,255,255,0.1); }
+.btn { display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #6C3CE1, #8B5CF6); color: white; text-decoration: none; border-radius: 12px; margin: 20px 0; }
+.footer { text-align: center; color: #94A3B8; font-size: 12px; margin-top: 20px; }
+</style></head>
+<body>
+<div class="container">
+<h2 style="text-align:center; color:#8B5CF6;">AI Academy</h2>
+<p>Hola <strong>{{ user.username }}</strong>,</p>
+<p>Tu inscripción al curso <strong>{{ course.title }}</strong> ha sido <span style="color:#00FF88;">aprobada</span>.</p>
+<p>Ya puedes acceder a todo el contenido del curso.</p>
+<a href="{{ login_url }}" class="btn">Ir al curso</a>
+<div class="footer">&copy; {% now "Y" %} AI Academy</div>
+</div>
+</body>
+</html>

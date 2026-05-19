@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+        .container { max-width: 600px; margin: 20px auto; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #DC2626, #EF4444); padding: 30px; text-align: center; }
+        .header h1 { color: #fff; margin: 0; font-size: 24px; }
+        .body { padding: 30px; color: #333; }
+        .body p { line-height: 1.6; margin: 0 0 15px; }
+        .footer { text-align: center; padding: 20px; color: #999; font-size: 12px; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Solicitud no Aprobada</h1>
+        </div>
+        <div class="body">
+            <p>Hola <strong>{{ user.first_name|default:user.username }}</strong>,</p>
+            <p>Lamentamos informarte que tu solicitud de registro en <strong>AI Academy</strong> no ha sido aprobada en esta ocasión.</p>
+            <p>Si crees que se trata de un error, por favor contacta con nuestro equipo de soporte para más información.</p>
+            <p>— Equipo AI Academy</p>
+        </div>
+        <div class="footer">
+            <p>AI Academy — Aprendizaje Inteligente</p>
+        </div>
+    </div>
+</body>
+</html>

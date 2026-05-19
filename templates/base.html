@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}AI Academy{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    {% block extrahead %}{% endblock %}
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand ai-logo-3d" href="/">
+                <i class="fas fa-brain ai-brain-glow"></i> AI Academy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'courses:course_list' %}">
+                            <i class="fas fa-book"></i> Cursos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'regression_demo:index' %}">
+                            <i class="fas fa-chart-line"></i> Regresión
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'genetic_demo:index' %}">
+                            <i class="fas fa-dna"></i> Algoritmo Genético
+                        </a>
+                    </li>
+                    {% if user.is_superuser %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'users:admin_panel' %}">
+                            <i class="fas fa-shield-alt"></i> Admin
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+                <ul class="navbar-nav">
+                    {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'users:profile' %}">
+                            <i class="fas fa-id-card"></i> Mi Perfil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <form method="post" action="{% url 'users:logout' %}">
+                            {% csrf_token %}
+                            <button type="submit" class="nav-link btn btn-link text-danger" style="border:none;background:none;">
+                                <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+                            </button>
+                        </form>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'users:login' %}">
+                            <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'users:register' %}">
+                            <i class="fas fa-user-plus"></i> Registrarse
+                        </a>
+                    </li>
+                    {% endif %}
+                    </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="content" class="py-4 bg-data-wave">
+        <div class="hero-neural-bg" style="display:none;" aria-hidden="true">
+            <svg width="0" height="0" viewBox="0 0 200 200">
+                <circle cx="30" cy="40" r="4" fill="#6C3CE1" opacity="0.5"/>
+                <circle cx="30" cy="100" r="4" fill="#6C3CE1" opacity="0.5"/>
+                <circle cx="30" cy="160" r="4" fill="#6C3CE1" opacity="0.5"/>
+                <circle cx="100" cy="70" r="5" fill="#00D4FF" opacity="0.6"/>
+                <circle cx="100" cy="130" r="5" fill="#00D4FF" opacity="0.6"/>
+                <circle cx="170" cy="50" r="4" fill="#00FF88" opacity="0.5"/>
+                <circle cx="170" cy="100" r="4" fill="#00FF88" opacity="0.5"/>
+                <circle cx="170" cy="150" r="4" fill="#00FF88" opacity="0.5"/>
+                <line x1="34" y1="42" x2="96" y2="70" stroke="#6C3CE1" stroke-width="0.5" opacity="0.3"/>
+                <line x1="34" y1="42" x2="96" y2="130" stroke="#6C3CE1" stroke-width="0.5" opacity="0.3"/>
+                <line x1="34" y1="102" x2="96" y2="70" stroke="#6C3CE1" stroke-width="0.5" opacity="0.3"/>
+                <line x1="34" y1="102" x2="96" y2="130" stroke="#6C3CE1" stroke-width="0.5" opacity="0.3"/>
+                <line x1="34" y1="162" x2="96" y2="70" stroke="#6C3CE1" stroke-width="0.5" opacity="0.3"/>
+                <line x1="34" y1="162" x2="96" y2="130" stroke="#6C3CE1" stroke-width="0.5" opacity="0.3"/>
+                <line x1="104" y1="72" x2="166" y2="50" stroke="#00D4FF" stroke-width="0.5" opacity="0.3"/>
+                <line x1="104" y1="72" x2="166" y2="100" stroke="#00D4FF" stroke-width="0.5" opacity="0.3"/>
+                <line x1="104" y1="72" x2="166" y2="150" stroke="#00D4FF" stroke-width="0.5" opacity="0.3"/>
+                <line x1="104" y1="132" x2="166" y2="50" stroke="#00D4FF" stroke-width="0.5" opacity="0.3"/>
+                <line x1="104" y1="132" x2="166" y2="100" stroke="#00D4FF" stroke-width="0.5" opacity="0.3"/>
+                <line x1="104" y1="132" x2="166" y2="150" stroke="#00D4FF" stroke-width="0.5" opacity="0.3"/>
+            </svg>
+        </div>
+        {% block content %}{% endblock %}
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+
+</html>

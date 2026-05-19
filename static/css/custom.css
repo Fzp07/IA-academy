@@ -1,0 +1,1070 @@
+:root {
+    --primary: #6C3CE1;
+    --primary-dark: #4A1F9E;
+    --primary-light: #8B5CF6;
+    --accent: #00D4FF;
+    --accent2: #00FF88;
+    --bg-dark: #0A0A1A;
+    --bg-card: rgba(255, 255, 255, 0.05);
+    --text-primary: #E2E8F0;
+    --text-secondary: #94A3B8;
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glow-primary: 0 0 20px rgba(108, 60, 225, 0.3);
+    --glow-accent: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: 
+        linear-gradient(135deg, rgba(10, 10, 26, 0.95) 0%, rgba(20, 20, 40, 0.95) 100%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3C!-- Red neuronal --%3E%3Ccircle cx='30' cy='40' r='4' fill='%236C3CE1' opacity='0.5'/%3E%3Ccircle cx='30' cy='100' r='4' fill='%236C3CE1' opacity='0.5'/%3E%3Ccircle cx='30' cy='160' r='4' fill='%236C3CE1' opacity='0.5'/%3E%3Ccircle cx='100' cy='70' r='5' fill='%2300D4FF' opacity='0.6'/%3E%3Ccircle cx='100' cy='130' r='5' fill='%2300D4FF' opacity='0.6'/%3E%3Ccircle cx='170' cy='50' r='4' fill='%2300FF88' opacity='0.5'/%3E%3Ccircle cx='170' cy='100' r='4' fill='%2300FF88' opacity='0.5'/%3E%3Ccircle cx='170' cy='150' r='4' fill='%2300FF88' opacity='0.5'/%3E%3C!-- Conexiones --%3E%3Cline x1='34' y1='42' x2='96' y2='70' stroke='%236C3CE1' stroke-width='0.5' opacity='0.2'/%3E%3Cline x1='34' y1='42' x2='96' y2='130' stroke='%236C3CE1' stroke-width='0.5' opacity='0.2'/%3E%3Cline x1='34' y1='102' x2='96' y2='70' stroke='%236C3CE1' stroke-width='0.5' opacity='0.2'/%3E%3Cline x1='34' y1='102' x2='96' y2='130' stroke='%236C3CE1' stroke-width='0.5' opacity='0.2'/%3E%3Cline x1='34' y1='162' x2='96' y2='70' stroke='%236C3CE1' stroke-width='0.5' opacity='0.2'/%3E%3Cline x1='34' y1='162' x2='96' y2='130' stroke='%236C3CE1' stroke-width='0.5' opacity='0.2'/%3E%3Cline x1='104' y1='72' x2='166' y2='50' stroke='%2300D4FF' stroke-width='0.5' opacity='0.2'/%3E%3Cline x1='104' y1='72' x2='166' y2='100' stroke='%2300D4FF' stroke-width='0.5' opacity='0.2'/%3E%3Cline x1='104' y1='72' x2='166' y2='150' stroke='%2300D4FF' stroke-width='0.5' opacity='0.2'/%3E%3Cline x1='104' y1='132' x2='166' y2='50' stroke='%2300D4FF' stroke-width='0.5' opacity='0.2'/%3E%3Cline x1='104' y1='132' x2='166' y2='100' stroke='%2300D4FF' stroke-width='0.5' opacity='0.2'/%3E%3Cline x1='104' y1='132' x2='166' y2='150' stroke='%2300D4FF' stroke-width='0.5' opacity='0.2'/%3E%3C!-- Puntos de datos --%3E%3Ccircle cx='60' cy='25' r='2' fill='%23fff' opacity='0.15'/%3E%3Ccircle cx='140' cy='45' r='2' fill='%23fff' opacity='0.15'/%3E%3Ccircle cx='80' cy='180' r='2' fill='%23fff' opacity='0.15'/%3E%3Ccircle cx='155' cy='175' r='2' fill='%23fff' opacity='0.15'/%3E%3Ccircle cx='45' cy='85' r='1.5' fill='%23fff' opacity='0.1'/%3E%3Ccircle cx='125' cy='95' r='1.5' fill='%23fff' opacity='0.1'/%3E%3C/svg%3E");
+    background-size: cover, 200px 200px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(108, 60, 225, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 80%, rgba(0, 255, 136, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 30% 60%, rgba(255,255,255,0.2) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 50% 10%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 70% 40%, rgba(255,255,255,0.2) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 90% 80%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 15% 85%, rgba(255,255,255,0.15) 0%, transparent 100%),
+        radial-gradient(1px 1px at 85% 15%, rgba(255,255,255,0.15) 0%, transparent 100%);
+    background-size: 200px 200px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    min-height: calc(100vh - 160px);
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(10, 10, 26, 0.95) !important;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--glass-border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.4rem;
+    background: linear-gradient(135deg, var(--primary-light), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+}
+
+.navbar-brand i {
+    -webkit-text-fill-color: var(--accent);
+    margin-right: 8px;
+    filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.5));
+}
+
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-light), var(--accent));
+    transition: width 0.3s ease;
+    border-radius: 1px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 70%;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+/* Cards */
+.card {
+    background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    position: relative;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--accent), var(--accent2));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.3),
+        var(--glow-primary);
+    border-color: rgba(108, 60, 225, 0.3);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card-header {
+    background: linear-gradient(135deg, rgba(108, 60, 225, 0.3), rgba(0, 212, 255, 0.1)) !important;
+    border-bottom: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    font-weight: 600;
+    border-radius: 16px 16px 0 0 !important;
+    padding: 1rem 1.25rem;
+}
+
+.card-body {
+    color: var(--text-secondary);
+}
+
+.card-title {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+/* Botones */
+.btn {
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    box-shadow: 0 4px 15px rgba(108, 60, 225, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(108, 60, 225, 0.5);
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+}
+
+.btn-outline-primary {
+    border: 1px solid var(--primary-light);
+    color: var(--primary-light);
+    background: transparent;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border-color: transparent;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--glow-primary);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #059669, var(--accent2));
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.2);
+}
+
+/* Formularios */
+.form-control,
+.form-select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    color: var(--text-primary);
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+}
+
+.form-control::placeholder,
+.form-select::placeholder {
+    color: rgba(148, 163, 184, 0.5);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 3px rgba(108, 60, 225, 0.2);
+    color: var(--text-primary);
+}
+
+.form-label {
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+/* Alertas */
+.alert {
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+}
+
+.alert-success {
+    background: rgba(0, 255, 136, 0.1);
+    border-color: rgba(0, 255, 136, 0.2);
+    color: var(--accent2);
+}
+
+.alert-info {
+    background: rgba(0, 212, 255, 0.1);
+    border-color: rgba(0, 212, 255, 0.2);
+    color: var(--accent);
+}
+
+.alert-danger {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.2);
+    color: #EF4444;
+}
+
+.alert-warning {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: rgba(245, 158, 11, 0.2);
+    color: #F59E0B;
+}
+
+/* Lecciones */
+.lesson-content {
+    background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.lesson-content h1,
+.lesson-content h2,
+.lesson-content h3 {
+    color: var(--text-primary);
+}
+
+.lesson-content p,
+.lesson-content li {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.code-block {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 3px solid var(--primary-light);
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    overflow-x: auto;
+    color: var(--accent);
+}
+
+/* Badges */
+.badge {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.bg-primary,
+.badge.bg-primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+}
+
+.bg-success,
+.badge.bg-success {
+    background: linear-gradient(135deg, #059669, var(--accent2)) !important;
+}
+
+.bg-info,
+.badge.bg-info {
+    background: linear-gradient(135deg, #0284C7, var(--accent)) !important;
+}
+
+.bg-warning,
+.badge.bg-warning {
+    background: linear-gradient(135deg, #D97706, #F59E0B) !important;
+}
+
+.bg-danger,
+.badge.bg-danger {
+    background: linear-gradient(135deg, #DC2626, #EF4444) !important;
+}
+
+/* List Group */
+.list-group-item {
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background: rgba(108, 60, 225, 0.1);
+    border-color: rgba(108, 60, 225, 0.3);
+}
+
+.list-group-item.active {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    border-color: transparent;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background: transparent;
+    padding: 0;
+}
+
+.breadcrumb-item a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: var(--text-secondary);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--text-secondary);
+}
+
+/* Tablas */
+.table {
+    color: var(--text-secondary);
+}
+
+.table thead th {
+    color: var(--text-primary);
+    border-bottom-color: var(--glass-border);
+    font-weight: 600;
+}
+
+.table td,
+.table th {
+    border-color: var(--glass-border);
+}
+
+/* Footer */
+footer {
+    background: rgba(10, 10, 26, 0.95) !important;
+    border-top: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 1;
+}
+
+footer p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Cards en lista de cursos se animan secuencialmente */
+.row > .col-md-6,
+.row > .col-lg-4,
+.row > .col-lg-8 {
+    animation: fadeInUp 0.6s ease-out both;
+}
+
+.row > .col-md-6:nth-child(1),
+.row > .col-lg-4:nth-child(1),
+.row > .col-lg-8:nth-child(1) { animation-delay: 0.05s; }
+.row > .col-md-6:nth-child(2) { animation-delay: 0.1s; }
+.row > .col-md-6:nth-child(3) { animation-delay: 0.15s; }
+.row > .col-md-6:nth-child(4) { animation-delay: 0.2s; }
+.row > .col-md-6:nth-child(5) { animation-delay: 0.25s; }
+.row > .col-md-6:nth-child(6) { animation-delay: 0.3s; }
+
+/* Dropdown */
+.dropdown-menu {
+    background: rgba(10, 10, 26, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-item {
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin: 2px 4px;
+}
+
+.dropdown-item:hover {
+    background: rgba(108, 60, 225, 0.2);
+    color: var(--text-primary);
+}
+
+.dropdown-divider {
+    border-color: var(--glass-border);
+}
+
+/* Progress */
+.progress {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    height: 10px;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 10px;
+}
+
+/* Selected items en knapsack */
+.list-group-item {
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    color: var(--text-secondary);
+}
+
+/* Links generales */
+a {
+    color: var(--accent);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-light);
+}
+
+/* Texto muted */
+.text-muted {
+    color: var(--text-secondary) !important;
+}
+
+/* Heading en páginas */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.lead {
+    color: var(--text-secondary);
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-light);
+}
+
+/* ============================================
+   ANIMACIONES ALUSIVAS A INTELIGENCIA ARTIFICIAL
+   ============================================ */
+
+/* 1. Onda de pulso de red neuronal (scanning effect) */
+@keyframes aiScan {
+    0% {
+        clip-path: inset(100% 0 0 0);
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes aiScanLine {
+    0% {
+        top: -2px;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.card.ai-scan::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    animation: aiScanLine 3s ease-in-out infinite;
+    z-index: 2;
+}
+
+/* 2. Partículas de datos flotantes */
+@keyframes floatData {
+    0%, 100% {
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(-80px) translateX(20px) scale(0.8);
+        opacity: 0.3;
+    }
+    90% {
+        opacity: 0.1;
+    }
+}
+
+body::after {
+    background-image:
+        radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 30% 60%, rgba(255,255,255,0.2) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 50% 10%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 70% 40%, rgba(255,255,255,0.2) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 90% 80%, rgba(255,255,255,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 15% 85%, rgba(255,255,255,0.15) 0%, transparent 100%),
+        radial-gradient(1px 1px at 85% 15%, rgba(255,255,255,0.15) 0%, transparent 100%);
+    background-size: 200px 200px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Override the existing body::after to add animated particles */
+.ai-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.ai-particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 50%;
+    opacity: 0;
+    animation: floatData var(--duration, 8s) ease-in-out infinite;
+    animation-delay: var(--delay, 0s);
+    box-shadow: 0 0 6px var(--accent);
+}
+
+/* 3. Carga tipo "IA pensando" (pulsing dots) */
+@keyframes aiThinking {
+    0%, 20% {
+        transform: translateY(0);
+        background: var(--primary-light);
+    }
+    50% {
+        transform: translateY(-10px);
+        background: var(--accent);
+        box-shadow: 0 0 15px var(--accent);
+    }
+    80%, 100% {
+        transform: translateY(0);
+        background: var(--primary-light);
+    }
+}
+
+.ai-thinking-dots {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.ai-thinking-dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    animation: aiThinking 1.4s ease-in-out infinite;
+}
+
+.ai-thinking-dots span:nth-child(1) { animation-delay: 0s; }
+.ai-thinking-dots span:nth-child(2) { animation-delay: 0.2s; }
+.ai-thinking-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+/* 4. Barra de progreso con destello tipo "carga de IA" */
+@keyframes aiProgressGlow {
+    0% {
+        transform: translateX(-100%) skewX(-15deg);
+    }
+    100% {
+        transform: translateX(200%) skewX(-15deg);
+    }
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: aiProgressGlow 2s ease-in-out infinite;
+}
+
+.progress-bar {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 10px;
+}
+
+/* 5. Animación de botón "procesando IA" */
+@keyframes aiProcessing {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.btn-ai-processing {
+    background: linear-gradient(270deg, var(--primary), var(--accent), var(--primary-light), var(--accent2));
+    background-size: 300% 300%;
+    animation: aiProcessing 3s ease infinite;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+.btn-ai-processing:hover {
+    box-shadow: 0 0 40px rgba(0, 212, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* 6. Anillo de pulso tipo "señal de IA" */
+@keyframes aiPulseRing {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.2;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.ai-pulse-ring {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ai-pulse-ring::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    animation: aiPulseRing 2s ease-out infinite;
+}
+
+.ai-pulse-ring::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--primary-light);
+    border-radius: 50%;
+    animation: aiPulseRing 2s ease-out infinite;
+    animation-delay: 0.5s;
+}
+
+/* 7. Efecto de escritura tipo "máquina" (AI typing) */
+@keyframes aiTyping {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes aiBlink {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--accent);
+    }
+}
+
+.ai-typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--accent);
+    animation:
+        aiTyping 3s steps(40) 1s forwards,
+        aiBlink 0.8s step-end infinite;
+    width: 0;
+    max-width: fit-content;
+}
+
+/* 8. Olas de datos (data waves) */
+@keyframes dataWave {
+    0% {
+        transform: translateX(-100%) scaleY(1);
+    }
+    50% {
+        transform: translateX(0%) scaleY(0.5);
+    }
+    100% {
+        transform: translateX(100%) scaleY(1);
+    }
+}
+
+.bg-data-wave {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-data-wave::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 30%;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 40px,
+        rgba(0, 212, 255, 0.03) 40px,
+        rgba(0, 212, 255, 0.03) 42px
+    );
+    animation: dataWave 8s linear infinite;
+    pointer-events: none;
+}
+
+/* 9. Nodo de red neuronal animado */
+@keyframes neuronPulse {
+    0%, 100% {
+        r: 4;
+        opacity: 0.5;
+    }
+    50% {
+        r: 6;
+        opacity: 0.9;
+    }
+}
+
+.hero-neural-bg svg circle {
+    animation: neuronPulse 3s ease-in-out infinite;
+}
+
+.hero-neural-bg svg circle:nth-child(2n) { animation-delay: 0.5s; }
+.hero-neural-bg svg circle:nth-child(3n) { animation-delay: 1s; }
+.hero-neural-bg svg circle:nth-child(5n) { animation-delay: 1.5s; }
+
+/* 10. Efecto de "conexión establecida" entre nodos */
+@keyframes connectionSignal {
+    0% {
+        stroke-dashoffset: 100;
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+}
+
+.hero-neural-bg svg line {
+    stroke-dasharray: 100;
+    animation: connectionSignal 4s linear infinite;
+}
+
+.hero-neural-bg svg line:nth-child(2n) { animation-delay: 0.8s; }
+.hero-neural-bg svg line:nth-child(3n) { animation-delay: 1.6s; }
+.hero-neural-bg svg line:nth-child(5n) { animation-delay: 2.4s; }
+
+/* 11. Espectro de frecuencia / barras de audio-visualización de datos */
+@keyframes freqBar {
+    0%, 100% {
+        height: 20%;
+    }
+    25% {
+        height: 70%;
+    }
+    50% {
+        height: 40%;
+    }
+    75% {
+        height: 90%;
+    }
+}
+
+.ai-frequency {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 40px;
+}
+
+.ai-frequency span {
+    width: 4px;
+    background: linear-gradient(to top, var(--primary), var(--accent));
+    border-radius: 2px;
+    animation: freqBar 1.2s ease-in-out infinite;
+}
+
+.ai-frequency span:nth-child(1) { animation-delay: 0s; }
+.ai-frequency span:nth-child(2) { animation-delay: 0.1s; }
+.ai-frequency span:nth-child(3) { animation-delay: 0.2s; }
+.ai-frequency span:nth-child(4) { animation-delay: 0.3s; }
+.ai-frequency span:nth-child(5) { animation-delay: 0.4s; }
+.ai-frequency span:nth-child(6) { animation-delay: 0.5s; }
+.ai-frequency span:nth-child(7) { animation-delay: 0.6s; }
+.ai-frequency span:nth-child(8) { animation-delay: 0.7s; }
+
+/* 12. Partículas generadas desde JS (clase base) */
+.ai-particle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* 13. Logo / ícono de IA con rotación 3D suave */
+@keyframes aiLogoFloat {
+    0%, 100% {
+        transform: perspective(400px) rotateY(0deg) rotateX(0deg);
+    }
+    25% {
+        transform: perspective(400px) rotateY(5deg) rotateX(-3deg);
+    }
+    75% {
+        transform: perspective(400px) rotateY(-5deg) rotateX(3deg);
+    }
+}
+
+.ai-logo-3d {
+    display: inline-block;
+    animation: aiLogoFloat 6s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.3));
+}
+
+/* 14. Gradiente animado tipo "cerebro digital" */
+@keyframes brainGradient {
+    0% {
+        filter: hue-rotate(0deg) brightness(1);
+    }
+    50% {
+        filter: hue-rotate(15deg) brightness(1.1);
+    }
+    100% {
+        filter: hue-rotate(0deg) brightness(1);
+    }
+}
+
+.ai-brain-glow {
+    animation: brainGradient 8s ease-in-out infinite;
+}
+
+/* 15. Animación de fondo de "big data" */
+@keyframes dataRain {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.2;
+    }
+    90% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.ai-data-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.ai-data-rain span {
+    position: absolute;
+    top: -20px;
+    font-size: 10px;
+    color: var(--accent);
+    opacity: 0;
+    animation: dataRain var(--duration, 6s) linear infinite;
+    animation-delay: var(--delay, 0s);
+    font-family: 'Courier New', monospace;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card:hover {
+        transform: none;
+    }
+
+    .lesson-content {
+        padding: 15px;
+    }
+
+    .ai-particle {
+        display: none;
+    }
+
+    .ai-data-rain {
+        display: none;
+    }
+}
