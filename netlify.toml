@@ -6,6 +6,13 @@
 [build.environment]
   PYTHON_VERSION = "3.12"
 
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["requirements.txt"]
+
+[functions.wsgi_handler]
+  external_node_modules = ["serverless-wsgi"]
+
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/wsgi_handler"
