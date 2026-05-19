@@ -8,6 +8,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '.netlify.app',
     '.railway.app',
+    'ia-academy-production.up.railway.app',
     '.onrender.com',
     os.environ.get('ALLOWED_HOSTS', ''),
 ]
