@@ -55,4 +55,4 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-7. Abrir http://localhost:8000
+Link de la pagina web: http://143.198.103.130/
