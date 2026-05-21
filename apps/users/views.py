@@ -42,9 +42,8 @@ def password_reset_request(request):
     if request.method == 'POST':
         try:
             email = request.POST.get('email')
-            try:
-                user = User.objects.get(email=email, is_active=True)
-            except User.DoesNotExist:
+            user = User.objects.filter(email=email, is_active=True).first()
+            if not user:
                 messages.error(request, 'No existe un usuario activo con ese correo.')
                 return render(request, 'users/password_reset_request.html')
 
