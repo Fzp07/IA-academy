@@ -55,4 +55,4 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-Link de la pagina web: http://localhost:8000
+Link de la web app: https://ia-academy-app-r46v2.ondigitalocean.app/
