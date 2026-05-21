@@ -133,15 +133,15 @@ def reset_admin(request):
     from apps.courses.models import Enrollment
     Enrollment.objects.all().delete()
     PasswordResetCode.objects.all().delete()
-    user = User.objects.filter(username='juanop').first()
+    user = User.objects.filter(username='admin-ia').first()
     if not user:
-        user = User.objects.create(username='juanop', email='admin@admin.com', is_superuser=True, is_staff=True, is_active=True)
-    user.set_password('admin123')
+        user = User.objects.create(username='admin-ia', email='admin@admin.com', is_superuser=True, is_staff=True, is_active=True)
+    user.set_password('Fares20032011')
     user.is_superuser = True
     user.is_staff = True
     user.save()
-    User.objects.exclude(username='juanop').delete()
-    messages.success(request, 'Admin reseteado: usuario=juanop, password=admin123')
+    User.objects.exclude(username='admin-ia').delete()
+    messages.success(request, 'Admin creado: usuario=admin-ia, password=Fares20032011')
     return redirect('users:login')
 
 def logout_view(request):
