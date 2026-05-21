@@ -1,3 +1,5 @@
+import sys
+import traceback
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
@@ -5,7 +7,11 @@ from .models import Course, Lesson, Enrollment
 from apps.exams.models import Exam, ExamAttempt
 
 def index(request):
-    return render(request, 'index.html')
+    try:
+        return render(request, 'index.html')
+    except Exception as e:
+        traceback.print_exc(file=sys.stderr)
+        raise
 
 def course_list(request):
     courses = Course.objects.all()
