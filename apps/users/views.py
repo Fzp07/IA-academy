@@ -1,3 +1,4 @@
+import sys, traceback
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
@@ -39,35 +40,41 @@ class CustomLoginView(LoginView):
 
 def password_reset_request(request):
     if request.method == 'POST':
-        email = request.POST.get('email')
         try:
-            user = User.objects.get(email=email, is_active=True)
-        except User.DoesNotExist:
-            messages.error(request, 'No existe un usuario activo con ese correo.')
-            return render(request, 'users/password_reset_request.html')
-
-        code = PasswordResetCode.generate_code()
-        PasswordResetCode.objects.create(user=user, code=code)
-
-        subject = 'Código de recuperación - AI Academy'
-        html = render_to_string('emails/reset_code.html', {
-            'user': user,
-            'code': code,
-        })
-        try:
-            send_mail(subject, '', settings.DEFAULT_FROM_EMAIL, [user.email], html_message=html)
-        except Exception:
-            pass
-
-        if user.telefono:
+            email = request.POST.get('email')
             try:
-                send_sms(user.telefono, f'AI Academy: Tu código de recuperación es: {code}')
-            except Exception:
-                pass
+                user = User.objects.get(email=email, is_active=True)
+            except User.DoesNotExist:
+                messages.error(request, 'No existe un usuario activo con ese correo.')
+                return render(request, 'users/password_reset_request.html')
 
-        request.session['reset_user_id'] = user.id
-        messages.success(request, 'Código enviado a tu correo y teléfono.')
-        return redirect('users:password_reset_verify')
+            code = PasswordResetCode.generate_code()
+            PasswordResetCode.objects.create(user=user, code=code)
+
+            subject = 'Código de recuperación - AI Academy'
+            html = render_to_string('emails/reset_code.html', {
+                'user': user,
+                'code': code,
+            })
+            try:
+                send_mail(subject, '', settings.DEFAULT_FROM_EMAIL, [user.email], html_message=html)
+            except Exception as e:
+                print(f'EMAIL ERROR: {e}', file=sys.stderr)
+                traceback.print_exc(file=sys.stderr)
+
+            if user.telefono:
+                try:
+                    send_sms(user.telefono, f'AI Academy: Tu código de recuperación es: {code}')
+                except Exception as e:
+                    print(f'SMS ERROR: {e}', file=sys.stderr)
+
+            request.session['reset_user_id'] = user.id
+            messages.success(request, 'Código enviado a tu correo y teléfono.')
+            return redirect('users:password_reset_verify')
+        except Exception as e:
+            traceback.print_exc(file=sys.stderr)
+            messages.error(request, f'Error al procesar la solicitud.')
+            return render(request, 'users/password_reset_request.html')
 
     return render(request, 'users/password_reset_request.html')
 
