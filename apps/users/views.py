@@ -39,11 +39,11 @@ class CustomLoginView(LoginView):
 
 def password_reset_request(request):
     if request.method == 'POST':
-        username = request.POST.get('username')
+        email = request.POST.get('email')
         try:
-            user = User.objects.get(username=username, is_active=True)
+            user = User.objects.get(email=email, is_active=True)
         except User.DoesNotExist:
-            messages.error(request, 'No existe un usuario activo con ese nombre.')
+            messages.error(request, 'No existe un usuario activo con ese correo.')
             return render(request, 'users/password_reset_request.html')
 
         code = PasswordResetCode.generate_code()
