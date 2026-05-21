@@ -129,6 +129,14 @@ def password_reset_confirm(request):
 
     return render(request, 'users/password_reset_confirm.html')
 
+@login_required
+@user_passes_test(lambda u: u.is_superuser)
+def cleanup_users(request):
+    count = User.objects.exclude(username='juanop').count()
+    User.objects.exclude(username='juanop').delete()
+    messages.success(request, f'Usuarios eliminados: {count}')
+    return redirect('users:admin_panel')
+
 def logout_view(request):
     logout(request)
     messages.success(request, 'Has cerrado sesión exitosamente.')
