@@ -19,8 +19,8 @@ SECRET_KEY = env('SECRET_KEY', default='django-insecure-dev-key-not-for-producti
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.ngrok.io', '.ngrok-free.app', '.ngrok-free.dev', '.railway.app', '.onrender.com', '.netlify.app']
-CSRF_TRUSTED_ORIGINS = ['https://*.ngrok.io', 'https://*.ngrok-free.app', 'https://*.ngrok-free.dev', 'https://*.railway.app', 'https://*.onrender.com', 'https://*.netlify.app']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.ngrok.io', '.ngrok-free.app', '.ngrok-free.dev', '.railway.app', '.onrender.com', '.netlify.app', '.ondigitalocean.app']
+CSRF_TRUSTED_ORIGINS = ['https://*.ngrok.io', 'https://*.ngrok-free.app', 'https://*.ngrok-free.dev', 'https://*.railway.app', 'https://*.onrender.com', 'https://*.netlify.app', 'https://*.ondigitalocean.app']
 
 # Application definition
 INSTALLED_APPS = [
