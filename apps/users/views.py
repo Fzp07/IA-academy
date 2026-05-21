@@ -54,10 +54,16 @@ def password_reset_request(request):
             'user': user,
             'code': code,
         })
-        send_mail(subject, '', settings.DEFAULT_FROM_EMAIL, [user.email], html_message=html)
+        try:
+            send_mail(subject, '', settings.DEFAULT_FROM_EMAIL, [user.email], html_message=html)
+        except Exception:
+            pass
 
         if user.telefono:
-            send_sms(user.telefono, f'AI Academy: Tu código de recuperación es: {code}')
+            try:
+                send_sms(user.telefono, f'AI Academy: Tu código de recuperación es: {code}')
+            except Exception:
+                pass
 
         request.session['reset_user_id'] = user.id
         messages.success(request, 'Código enviado a tu correo y teléfono.')
