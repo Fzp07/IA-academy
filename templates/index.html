@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}AI Academy - Plataforma Educativa Inteligente{% endblock %}
+
+{% block content %}
+<div class="hero-section text-center py-5" style="background: linear-gradient(135deg, #0a0a2e 0%, #1a1a4e 50%, #0a0a2e 100%);">
+    <div class="container">
+        <h1 class="display-3 fw-bold mb-3" style="background: linear-gradient(90deg, #6C3CE1, #00D4FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            <i class="fas fa-brain ai-brain-glow"></i> AI Academy
+        </h1>
+        <p class="lead text-light mb-4">Plataforma educativa impulsada por inteligencia artificial</p>
+        <div class="d-flex justify-content-center gap-3 mb-5">
+            <a href="{% url 'courses:course_list' %}" class="btn btn-primary btn-lg px-4">
+                <i class="fas fa-book"></i> Ver Cursos
+            </a>
+            <a href="{% url 'regression_demo:index' %}" class="btn btn-outline-info btn-lg px-4">
+                <i class="fas fa-chart-line"></i> Demo Regresión
+            </a>
+            <a href="{% url 'genetic_demo:index' %}" class="btn btn-outline-success btn-lg px-4">
+                <i class="fas fa-dna"></i> Algoritmo Genético
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 border-primary ai-scan">
+                <div class="card-body text-center">
+                    <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+                    <h4 class="card-title">Cursos Interactivos</h4>
+                    <p class="card-text">Aprende con contenido dinámico diseñado para potenciar tu conocimiento en IA.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 border-info ai-scan">
+                <div class="card-body text-center">
+                    <i class="fas fa-robot fa-3x text-info mb-3"></i>
+                    <h4 class="card-title">Demostraciones en Vivo</h4>
+                    <p class="card-text">Experimenta con algoritmos de regresión y genéticos directamente desde el navegador.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 border-success ai-scan">
+                <div class="card-body text-center">
+                    <i class="fas fa-certificate fa-3x text-success mb-3"></i>
+                    <h4 class="card-title">Evaluaciones</h4>
+                    <p class="card-text">Pon a prueba tus conocimientos con exámenes interactivos y certificaciones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 mb-5 text-center">
+    <div class="ai-frequency justify-content-center mb-3" style="display:flex; align-items:flex-end; gap:4px; height:40px;">
+        <span style="height:20%;"></span>
+        <span style="height:50%;"></span>
+        <span style="height:30%;"></span>
+        <span style="height:70%;"></span>
+        <span style="height:40%;"></span>
+        <span style="height:60%;"></span>
+        <span style="height:25%;"></span>
+        <span style="height:55%;"></span>
+    </div>
+    <p class="text-muted">Empieza tu viaje en el mundo de la inteligencia artificial hoy.</p>
+</div>
+{% endblock %}

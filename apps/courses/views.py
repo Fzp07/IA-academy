@@ -4,6 +4,9 @@ from django.contrib import messages
 from .models import Course, Lesson, Enrollment
 from apps.exams.models import Exam, ExamAttempt
 
+def index(request):
+    return render(request, 'index.html')
+
 def course_list(request):
     courses = Course.objects.all()
     user_completed = {}
