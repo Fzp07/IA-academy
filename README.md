@@ -1,6 +1,8 @@
 # AI Academy 🎓
 
 **URL:** https://ia-academy-app-r46v2.ondigitalocean.app/
+Perfil Administrador: admin-ia
+Clave: Fares20032011
 
 Plataforma web interactiva para el aprendizaje de Ciencia de Datos e Inteligencia Artificial. Desarrollada con Django, ofrece cursos autoguiados, demos interactivas (Regresión Lineal y Algoritmos Genéticos) y exámenes con calificación automática.
 
